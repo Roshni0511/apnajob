@@ -91,6 +91,8 @@
     }
     sidebarSearch();
     /*====== Sidebar menu Active ======*/
+
+    
     function mobileHeaderActive() {
         var navbarTrigger = $(".burger-icon"),
             endTrigger = $(".mobile-menu-close"),

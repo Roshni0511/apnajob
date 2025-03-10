@@ -8,7 +8,7 @@ const Navbar = () => {
             <div className="main-header">
                 <div className="header-left">
                     <div className="header-logo">
-                        <a href="index.html" className="d-flex"><img alt="jobhub" src="assets/imgs/theme/jobhub-logo.svg" /></a>
+                        <a href="/" className="d-flex"><img alt="jobhub" src="assets/imgs/theme/jobhub-logo.svg" /></a>
                     </div>
                     <div className="header-nav">
                         <nav className="nav-main-menu d-none d-xl-block">
@@ -17,60 +17,32 @@ const Navbar = () => {
                                     <a className="active" href="/">Home</a>
                                    
                                 </li>
-                                <li className="has-children">
-                                    <a href="job-grid.html">Browse Jobs</a>
-                                    <ul className="sub-menu">
-                                        <li><a href="job-grid.html">Job Grid</a></li>
-                                        <li><a href="job-grid-2.html">Job Grid 2</a></li>
-                                        <li><a href="job-list.html">Job List</a></li>
-                                        <li className="hr"><span></span></li>
-                                        <li><a href="job-single.html">Job Single 01</a></li>
-                                        <li><a href="job-single-2.html">Job Single 02</a></li>
-                                        <li><a href="job-single-3.html">Job Single 03</a></li>
-                                    </ul>
+                                <li >
+                                    <a href="/Jobs"> Jobs</a>                                  
+                                </li>
+                                <li >
+                                    <a href="/Employer">Employers</a>
+                                   
+                                </li>
+                                <li >
+                                    <a href="/Candidate">Candidates</a>
+                                </li>
+                                <li >
+                                    <a href="/Blog">Blog</a>
+                                    
                                 </li>
                                 <li className="has-children">
-                                    <a href="employers-grid.html">Employers</a>
+                                    <a href="/AboutUs">About Us</a>
                                     <ul className="sub-menu">
-                                        <li><a href="employers-grid.html">Employers Grid</a></li>
-                                        <li><a href="employers-grid-2.html">Employers Grid 2</a></li>
-                                        <li><a href="employers-list.html">Employers List</a></li>
-                                        <li className="hr"><span></span></li>
-                                        <li><a href="employers-single.html">Employers Single 01</a></li>
-                                        <li><a href="employers-single-2.html">Employers Single 02</a></li>
+                                      
+                                        <li><a href="/OurServices">Our Services</a></li>
+                                        <li><a href="/PricingPlan">Pricing Plan</a></li>
+                                        <li><a href="/FAQS">FAQs</a></li>
+                                       
                                     </ul>
                                 </li>
-                                <li className="has-children">
-                                    <a href="candidates-grid.html">Candidates</a>
-                                    <ul className="sub-menu">
-                                        <li><a href="candidates-grid.html">Candidates Grid</a></li>
-                                        <li><a href="candidates-grid-2.html">Candidates Grid 2</a></li>
-                                        <li><a href="candidates-list.html">Candidates List</a></li>
-                                        <li className="hr"><span></span></li>
-                                        <li><a href="candidates-single.html">Candidates Single 01</a></li>
-                                        <li><a href="candidates-single-2.html">Candidates Single 02</a></li>
-                                    </ul>
-                                </li>
-                                <li className="has-children">
-                                    <a href="#">Blog</a>
-                                    <ul className="sub-menu">
-                                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                                        <li><a href="blog-grid-2.html">Blog Grid Sidebar</a></li>
-                                        <li><a href="blog-list.html">Blog List</a></li>
-                                        <li className="hr"><span></span></li>
-                                        <li><a href="blog-single.html">Blog Single 01</a></li>
-                                        <li><a href="blog-single-2.html">Blog Single 02</a></li>
-                                    </ul>
-                                </li>
-                                <li className="has-children">
-                                    <a href="#">Pages</a>
-                                    <ul className="sub-menu">
-                                        <li><a href="page-about.html">About Us</a></li>
-                                        <li><a href="page-service.html">Our Services</a></li>
-                                        <li><a href="page-pricing.html">Pricing Plan</a></li>
-                                        <li><a href="pages-faqs.html">FAQs</a></li>
-                                        <li><a href="page-contact.html">Contact Us</a></li>
-                                    </ul>
+                                <li >
+                                    <a href="/ContactUs">Contact Us</a>                                 
                                 </li>
                             </ul>
                         </nav>
@@ -161,7 +133,7 @@ const Navbar = () => {
                                     </ul>
                                 </li>
                                 <li className="has-children">
-                                    <a href="#">Blog</a>
+                                    <a href="/Blog">Blog</a>
                                     <ul className="sub-menu">
                                         <li><a href="blog-grid.html">Blog Grid</a></li>
                                         <li><a href="blog-grid-2.html">Blog Grid Sidebar</a></li>

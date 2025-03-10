@@ -6,18 +6,18 @@ const Home = () => {
   return (
     <>
        <Navbar />
-       <main class="main">
-        <section class="section-box bg-banner-about banner-home-3 pt-100">
-            <div class="banner-hero">
-                <div class="banner-inner">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="block-banner">
-                                <h2 class="heading-banner text-center wow animate__animated animate__fadeInUp">There Are 98.688<br />Opportunities Here For you!</h2>
-                                <div class="form-find mw-720 mt-80">
-                                    <form class="wow animate__animated animate__fadeInUp">
-                                        <input type="text" class="form-input input-keysearch mr-10" placeholder="Job title" />
-                                        <select class="form-input mr-10 select-active">
+       <main className="main">
+        <section className="section-box bg-banner-about banner-home-3 pt-100">
+            <div className="banner-hero">
+                <div className="banner-inner">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <div className="block-banner">
+                                <h2 className="heading-banner text-center wow animate__animated animate__fadeInUp">There Are 98.688<br />Opportunities Here For you!</h2>
+                                <div className="form-find mw-720 mt-80">
+                                    <form className="wow animate__animated animate__fadeInUp">
+                                        <input type="text" className="form-input input-keysearch mr-10" placeholder="Job title" />
+                                        <select className="form-input mr-10 select-active">
                                             <option value="">Location</option>
                                             <option value="AX">Aland Islands</option>
                                             <option value="AF">Afghanistan</option>
@@ -264,10 +264,10 @@ const Home = () => {
                                             <option value="ZM">Zambia</option>
                                             <option value="ZW">Zimbabwe</option>
                                         </select>
-                                        <button class="btn btn-default btn-find wow animate__animated animate__fadeInUp">Find now</button>
+                                        <button className="btn btn-default btn-find wow animate__animated animate__fadeInUp">Find now</button>
                                     </form>
                                 </div>
-                                <div class="list-tags-banner mt-60 text-center wow animate__animated animate__fadeInUp">
+                                <div className="list-tags-banner mt-60 text-center wow animate__animated animate__fadeInUp">
                                     <strong>Popular Searches:</strong>
                                     <a href="#">Designer</a>, <a href="#">Developer</a>, <a href="#">Web</a>, <a href="#">Engineer</a>, <a href="#">Senior</a>,
                                 </div>
@@ -277,275 +277,275 @@ const Home = () => {
                 </div>
             </div>
         </section>
-        <section class="section-box mt-80">
-            <div class="container">
-                <h2 class="section-title text-center mb-15 wow animate__animated animate__fadeInUp">Featured Jobs</h2>
-                <div class="text-normal text-center mb-60 color-black-5 box-mw-60 wow animate__animated animate__fadeInUp">
+        <section className="section-box mt-80">
+            <div className="container">
+                <h2 className="section-title text-center mb-15 wow animate__animated animate__fadeInUp">Featured Jobs</h2>
+                <div className="text-normal text-center mb-60 color-black-5 box-mw-60 wow animate__animated animate__fadeInUp">
                     The #1 Job Board for Hiring Creative Professionals
                 </div>
-                <div class="list-recent-jobs list-job-2-col">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                <div className="list-recent-jobs list-job-2-col">
+                    <div className="row">
+                        <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                             {/* <!-- Item job --> */}
-                            <div class="card-job hover-up wow animate__animated animate__fadeInUp">
-                                <div class="card-job-top">
-                                    <div class="card-job-top--image">
+                            <div className="card-job hover-up wow animate__animated animate__fadeInUp">
+                                <div className="card-job-top">
+                                    <div className="card-job-top--image">
                                         <a href="employers-single.html">
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/digital.png" /></figure>
                                         </a>
                                     </div>
-                                    <div class="card-job-top--info">
-                                        <h6 class="card-job-top--info-heading"><a href="job-single.html">Digital Marketing Manager</a></h6>
-                                        <div class="row">
-                                            <div class="col-md-9">
-                                                <a href="employers-list.html"><span class="card-job-top--company">AliStudio, Inc</span></a>
-                                                <span class="card-job-top--location text-sm"><i class="fi-rr-marker"></i> New York, NY</span>
-                                                <span class="card-job-top--type-job text-sm"><i class="fi-rr-briefcase"></i>Full time</span>
-                                                <span class="card-job-top--post-time text-sm"><i class="fi-rr-clock"></i> 3 mins ago</span>
+                                    <div className="card-job-top--info">
+                                        <h6 className="card-job-top--info-heading"><a href="job-single.html">Digital Marketing Manager</a></h6>
+                                        <div className="row">
+                                            <div className="col-md-9">
+                                                <a href="employers-list.html"><span className="card-job-top--company">AliStudio, Inc</span></a>
+                                                <span className="card-job-top--location text-sm"><i className="fi-rr-marker"></i> New York, NY</span>
+                                                <span className="card-job-top--type-job text-sm"><i className="fi-rr-briefcase"></i>Full time</span>
+                                                <span className="card-job-top--post-time text-sm"><i className="fi-rr-clock"></i> 3 mins ago</span>
                                             </div>
-                                            <div class="col-md-3 text-md-end text-start">
-                                                <span class="card-job-top--price">₹500<span>/Hour</span></span>
+                                            <div className="col-md-3 text-md-end text-start">
+                                                <span className="card-job-top--price">₹500<span>/Hour</span></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-job-description mt-20">
+                                <div className="card-job-description mt-20">
                                     We want someone who has been doing this for a solid 2-3 years. We want someone who can
                                     demonstrate an extremely strong portfolio.
                                 </div>
-                                <div class="card-job-bottom mt-25">
-                                    <div class="row">
-                                        <div class="col-lg-9 col-sm-8 col-12">
-                                            <a href="job-grid.html" class="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                            <a href="job-grid-2.html" class="btn btn-small background-blue-light mr-5">Senior</a>
-                                            <a href="job-grid.html" class="btn btn-small background-6 disc-btn">Full time</a>
+                                <div className="card-job-bottom mt-25">
+                                    <div className="row">
+                                        <div className="col-lg-9 col-sm-8 col-12">
+                                            <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                            <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                            <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
-                                        <div class="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
-                                            <a href="#" class="text-lg color-muted"><i class="fi-rr-shield-check"></i></a>
-                                            <a href="#" class="ml-5 text-lg color-muted"><i class="fi-rr-bookmark"></i></a>
+                                        <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
+                                            <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
+                                            <a href="#" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             {/* <!-- End item job --> */}
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                             {/* <!-- Item job --> */}
-                            <div class="card-job hover-up wow animate__animated animate__fadeInUp">
-                                <div class="card-job-top">
-                                    <div class="card-job-top--image">
+                            <div className="card-job hover-up wow animate__animated animate__fadeInUp">
+                                <div className="card-job-top">
+                                    <div className="card-job-top--image">
                                         <a href="employers-single.html">
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/n-digital.png" /></figure>
                                         </a>
                                     </div>
-                                    <div class="card-job-top--info">
-                                        <h6 class="card-job-top--info-heading"><a href="job-single.html">Development Team Lead</a></h6>
-                                        <div class="row">
-                                            <div class="col-md-9">
-                                                <a href="employers-list.html"><span class="card-job-top--company">AliStudio, Inc</span></a>
-                                                <span class="card-job-top--location text-sm"><i class="fi-rr-marker"></i> New York, NY</span>
-                                                <span class="card-job-top--type-job text-sm"><i class="fi-rr-briefcase"></i>Full time</span>
-                                                <span class="card-job-top--post-time text-sm"><i class="fi-rr-clock"></i> 3 mins ago</span>
+                                    <div className="card-job-top--info">
+                                        <h6 className="card-job-top--info-heading"><a href="job-single.html">Development Team Lead</a></h6>
+                                        <div className="row">
+                                            <div className="col-md-9">
+                                                <a href="employers-list.html"><span className="card-job-top--company">AliStudio, Inc</span></a>
+                                                <span className="card-job-top--location text-sm"><i className="fi-rr-marker"></i> New York, NY</span>
+                                                <span className="card-job-top--type-job text-sm"><i className="fi-rr-briefcase"></i>Full time</span>
+                                                <span className="card-job-top--post-time text-sm"><i className="fi-rr-clock"></i> 3 mins ago</span>
                                             </div>
-                                            <div class="col-md-3 text-md-end text-start">
-                                                <span class="card-job-top--price">₹500<span>/Hour</span></span>
+                                            <div className="col-md-3 text-md-end text-start">
+                                                <span className="card-job-top--price">₹500<span>/Hour</span></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-job-description mt-20">
+                                <div className="card-job-description mt-20">
                                     We want someone who has been doing this for a solid 2-3 years. We want someone who can
                                     demonstrate an extremely strong portfolio.
                                 </div>
-                                <div class="card-job-bottom mt-25">
-                                    <div class="row">
-                                        <div class="col-lg-9 col-sm-8 col-12">
-                                            <a href="job-grid.html" class="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                            <a href="job-grid-2.html" class="btn btn-small background-blue-light mr-5">Senior</a>
-                                            <a href="job-grid.html" class="btn btn-small background-6 disc-btn">Full time</a>
+                                <div className="card-job-bottom mt-25">
+                                    <div className="row">
+                                        <div className="col-lg-9 col-sm-8 col-12">
+                                            <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                            <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                            <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
-                                        <div class="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
-                                            <a href="#" class="text-lg color-muted"><i class="fi-rr-shield-check"></i></a>
-                                            <a href="#" class="ml-5 text-lg color-muted"><i class="fi-rr-bookmark"></i></a>
+                                        <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
+                                            <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
+                                            <a href="#" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             {/* <!-- End item job --> */}
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                             {/* <!-- Item job --> */}
-                            <div class="card-job hover-up wow animate__animated animate__fadeInUp">
-                                <div class="card-job-top">
-                                    <div class="card-job-top--image">
+                            <div className="card-job hover-up wow animate__animated animate__fadeInUp">
+                                <div className="card-job-top">
+                                    <div className="card-job-top--image">
                                         <a href="employers-single.html">
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/n-digital2.png" /></figure>
                                         </a>
                                     </div>
-                                    <div class="card-job-top--info">
-                                        <h6 class="card-job-top--info-heading"><a href="job-single.html">Hiring Online English Teachers</a>
+                                    <div className="card-job-top--info">
+                                        <h6 className="card-job-top--info-heading"><a href="job-single.html">Hiring Online English Teachers</a>
                                         </h6>
-                                        <div class="row">
-                                            <div class="col-md-9">
-                                                <a href="employers-list.html"><span class="card-job-top--company">AliStudio, Inc</span></a>
-                                                <span class="card-job-top--location text-sm"><i class="fi-rr-marker"></i> New York, NY</span>
-                                                <span class="card-job-top--type-job text-sm"><i class="fi-rr-briefcase"></i>Full time</span>
-                                                <span class="card-job-top--post-time text-sm"><i class="fi-rr-clock"></i> 3 mins ago</span>
+                                        <div className="row">
+                                            <div className="col-md-9">
+                                                <a href="employers-list.html"><span className="card-job-top--company">AliStudio, Inc</span></a>
+                                                <span className="card-job-top--location text-sm"><i className="fi-rr-marker"></i> New York, NY</span>
+                                                <span className="card-job-top--type-job text-sm"><i className="fi-rr-briefcase"></i>Full time</span>
+                                                <span className="card-job-top--post-time text-sm"><i className="fi-rr-clock"></i> 3 mins ago</span>
                                             </div>
-                                            <div class="col-md-3 text-md-end text-start">
-                                                <span class="card-job-top--price">₹500<span>/Hour</span></span>
+                                            <div className="col-md-3 text-md-end text-start">
+                                                <span className="card-job-top--price">₹500<span>/Hour</span></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-job-description mt-20">
+                                <div className="card-job-description mt-20">
                                     We want someone who has been doing this for a solid 2-3 years. We want someone who can
                                     demonstrate an extremely strong portfolio.
                                 </div>
-                                <div class="card-job-bottom mt-25">
-                                    <div class="row">
-                                        <div class="col-lg-9 col-sm-8 col-12">
-                                            <a href="job-grid.html" class="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                            <a href="job-grid-2.html" class="btn btn-small background-blue-light mr-5">Senior</a>
-                                            <a href="job-grid.html" class="btn btn-small background-6 disc-btn">Full time</a>
+                                <div className="card-job-bottom mt-25">
+                                    <div className="row">
+                                        <div className="col-lg-9 col-sm-8 col-12">
+                                            <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                            <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                            <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
-                                        <div class="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
-                                            <a href="#" class="text-lg color-muted"><i class="fi-rr-shield-check"></i></a>
-                                            <a href="#" class="ml-5 text-lg color-muted"><i class="fi-rr-bookmark"></i></a>
+                                        <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
+                                            <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
+                                            <a href="#" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             {/* <!-- End item job --> */}
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                             {/* <!-- Item job --> */}
-                            <div class="card-job hover-u wow animate__animated animate__fadeInUp">
-                                <div class="card-job-top">
-                                    <div class="card-job-top--image">
+                            <div className="card-job hover-u wow animate__animated animate__fadeInUp">
+                                <div className="card-job-top">
+                                    <div className="card-job-top--image">
                                         <a href="employers-single.html">
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/digital.png" /></figure>
                                         </a>
                                     </div>
-                                    <div class="card-job-top--info">
-                                        <h6 class="card-job-top--info-heading"><a href="job-single.html">Development Team Lead</a></h6>
-                                        <div class="row">
-                                            <div class="col-md-9">
-                                                <a href="employers-list.html"><span class="card-job-top--company">AliStudio, Inc</span></a>
-                                                <span class="card-job-top--location text-sm"><i class="fi-rr-marker"></i> New York, NY</span>
-                                                <span class="card-job-top--type-job text-sm"><i class="fi-rr-briefcase"></i>Full time</span>
-                                                <span class="card-job-top--post-time text-sm"><i class="fi-rr-clock"></i> 3 mins ago</span>
+                                    <div className="card-job-top--info">
+                                        <h6 className="card-job-top--info-heading"><a href="job-single.html">Development Team Lead</a></h6>
+                                        <div className="row">
+                                            <div className="col-md-9">
+                                                <a href="employers-list.html"><span className="card-job-top--company">AliStudio, Inc</span></a>
+                                                <span className="card-job-top--location text-sm"><i className="fi-rr-marker"></i> New York, NY</span>
+                                                <span className="card-job-top--type-job text-sm"><i className="fi-rr-briefcase"></i>Full time</span>
+                                                <span className="card-job-top--post-time text-sm"><i className="fi-rr-clock"></i> 3 mins ago</span>
                                             </div>
-                                            <div class="col-md-3 text-md-end text-start">
-                                                <span class="card-job-top--price">₹500<span>/Hour</span></span>
+                                            <div className="col-md-3 text-md-end text-start">
+                                                <span className="card-job-top--price">₹500<span>/Hour</span></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-job-description mt-20">
+                                <div className="card-job-description mt-20">
                                     We want someone who has been doing this for a solid 2-3 years. We want someone who can
                                     demonstrate an extremely strong portfolio.
                                 </div>
-                                <div class="card-job-bottom mt-25">
-                                    <div class="row">
-                                        <div class="col-lg-9 col-sm-8 col-12">
-                                            <a href="job-grid.html" class="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                            <a href="job-grid-2.html" class="btn btn-small background-blue-light mr-5">Senior</a>
-                                            <a href="job-grid.html" class="btn btn-small background-6 disc-btn">Full time</a>
+                                <div className="card-job-bottom mt-25">
+                                    <div className="row">
+                                        <div className="col-lg-9 col-sm-8 col-12">
+                                            <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                            <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                            <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
-                                        <div class="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
-                                            <a href="#" class="text-lg color-muted"><i class="fi-rr-shield-check"></i></a>
-                                            <a href="#" class="ml-5 text-lg color-muted"><i class="fi-rr-bookmark"></i></a>
+                                        <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
+                                            <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
+                                            <a href="#" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             {/* <!-- End item job --> */}
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                             {/* <!-- Item job --> */}
-                            <div class="card-job hover-up wow animate__animated animate__fadeInUp">
-                                <div class="card-job-top">
-                                    <div class="card-job-top--image">
+                            <div className="card-job hover-up wow animate__animated animate__fadeInUp">
+                                <div className="card-job-top">
+                                    <div className="card-job-top--image">
                                         <a href="employers-single.html">
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/n-digital.png" /></figure>
                                         </a>
                                     </div>
-                                    <div class="card-job-top--info">
-                                        <h6 class="card-job-top--info-heading"><a href="job-single.html">Hiring Online Chiness Teachers</a>
+                                    <div className="card-job-top--info">
+                                        <h6 className="card-job-top--info-heading"><a href="job-single.html">Hiring Online Chiness Teachers</a>
                                         </h6>
-                                        <div class="row">
-                                            <div class="col-md-9">
-                                                <a href="employers-list.html"><span class="card-job-top--company">AliStudio, Inc</span></a>
-                                                <span class="card-job-top--location text-sm"><i class="fi-rr-marker"></i> New York, NY</span>
-                                                <span class="card-job-top--type-job text-sm"><i class="fi-rr-briefcase"></i>Full time</span>
-                                                <span class="card-job-top--post-time text-sm"><i class="fi-rr-clock"></i> 3 mins ago</span>
+                                        <div className="row">
+                                            <div className="col-md-9">
+                                                <a href="employers-list.html"><span className="card-job-top--company">AliStudio, Inc</span></a>
+                                                <span className="card-job-top--location text-sm"><i className="fi-rr-marker"></i> New York, NY</span>
+                                                <span className="card-job-top--type-job text-sm"><i className="fi-rr-briefcase"></i>Full time</span>
+                                                <span className="card-job-top--post-time text-sm"><i className="fi-rr-clock"></i> 3 mins ago</span>
                                             </div>
-                                            <div class="col-md-3 text-md-end text-start">
-                                                <span class="card-job-top--price">₹500<span>/Hour</span></span>
+                                            <div className="col-md-3 text-md-end text-start">
+                                                <span className="card-job-top--price">₹500<span>/Hour</span></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-job-description mt-20">
+                                <div className="card-job-description mt-20">
                                     We want someone who has been doing this for a solid 2-3 years. We want someone who can
                                     demonstrate an extremely strong portfolio.
                                 </div>
-                                <div class="card-job-bottom mt-25">
-                                    <div class="row">
-                                        <div class="col-lg-9 col-sm-8 col-12">
-                                            <a href="job-grid.html" class="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                            <a href="job-grid-2.html" class="btn btn-small background-blue-light mr-5">Senior</a>
-                                            <a href="job-grid.html" class="btn btn-small background-6 disc-btn">Full time</a>
+                                <div className="card-job-bottom mt-25">
+                                    <div className="row">
+                                        <div className="col-lg-9 col-sm-8 col-12">
+                                            <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                            <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                            <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
-                                        <div class="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
-                                            <a href="#" class="text-lg color-muted"><i class="fi-rr-shield-check"></i></a>
-                                            <a href="#" class="ml-5 text-lg color-muted"><i class="fi-rr-bookmark"></i></a>
+                                        <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
+                                            <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
+                                            <a href="#" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             {/* <!-- End item job --> */}
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                             {/* <!-- Item job --> */}
-                            <div class="card-job hover-up wow animate__animated animate__fadeInUp">
-                                <div class="card-job-top">
-                                    <div class="card-job-top--image">
+                            <div className="card-job hover-up wow animate__animated animate__fadeInUp">
+                                <div className="card-job-top">
+                                    <div className="card-job-top--image">
                                         <a href="employers-single.html">
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/n-digital2.png" /></figure>
                                         </a>
                                     </div>
-                                    <div class="card-job-top--info">
-                                        <h6 class="card-job-top--info-heading"><a href="job-single.html">Digital Experience Designer</a>
+                                    <div className="card-job-top--info">
+                                        <h6 className="card-job-top--info-heading"><a href="job-single.html">Digital Experience Designer</a>
                                         </h6>
-                                        <div class="row">
-                                            <div class="col-md-9">
-                                                <a href="employers-list.html"><span class="card-job-top--company">AliStudio, Inc</span></a>
-                                                <span class="card-job-top--location text-sm"><i class="fi-rr-marker"></i> New York, NY</span>
-                                                <span class="card-job-top--type-job text-sm"><i class="fi-rr-briefcase"></i>Full time</span>
-                                                <span class="card-job-top--post-time text-sm"><i class="fi-rr-clock"></i> 3 mins ago</span>
+                                        <div className="row">
+                                            <div className="col-md-9">
+                                                <a href="employers-list.html"><span className="card-job-top--company">AliStudio, Inc</span></a>
+                                                <span className="card-job-top--location text-sm"><i className="fi-rr-marker"></i> New York, NY</span>
+                                                <span className="card-job-top--type-job text-sm"><i className="fi-rr-briefcase"></i>Full time</span>
+                                                <span className="card-job-top--post-time text-sm"><i className="fi-rr-clock"></i> 3 mins ago</span>
                                             </div>
-                                            <div class="col-md-3 text-md-end text-start">
-                                                <span class="card-job-top--price">₹500<span>/Hour</span></span>
+                                            <div className="col-md-3 text-md-end text-start">
+                                                <span className="card-job-top--price">₹500<span>/Hour</span></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-job-description mt-20">
+                                <div className="card-job-description mt-20">
                                     We want someone who has been doing this for a solid 2-3 years. We want someone who can
                                     demonstrate an extremely strong portfolio. Create deliverables for your product
                                 </div>
-                                <div class="card-job-bottom mt-25">
-                                    <div class="row">
-                                        <div class="col-lg-9 col-sm-8 col-12">
-                                            <a href="job-grid.html" class="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                            <a href="job-grid-2.html" class="btn btn-small background-blue-light mr-5">Senior</a>
-                                            <a href="job-grid.html" class="btn btn-small background-6 disc-btn">Full time</a>
+                                <div className="card-job-bottom mt-25">
+                                    <div className="row">
+                                        <div className="col-lg-9 col-sm-8 col-12">
+                                            <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                            <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                            <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
-                                        <div class="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
-                                            <a href="#" class="text-lg color-muted"><i class="fi-rr-shield-check"></i></a>
-                                            <a href="#" class="ml-5 text-lg color-muted"><i class="fi-rr-bookmark"></i></a>
+                                        <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
+                                            <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
+                                            <a href="#" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -556,25 +556,25 @@ const Home = () => {
                 </div>
             </div>
         </section>
-        <section class="section-box mt-90 mb-80">
-            <div class="container">
-                <div class="block-job-bg block-job-bg-homepage-2">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-12 d-none d-md-block">
-                            <div class="box-image-findjob findjob-homepage-2 ml-0 wow animate__animated animate__fadeIn">
+        <section className="section-box mt-90 mb-80">
+            <div className="container">
+                <div className="block-job-bg block-job-bg-homepage-2">
+                    <div className="row">
+                        <div className="col-lg-6 col-md-12 col-sm-12 col-12 d-none d-md-block">
+                            <div className="box-image-findjob findjob-homepage-2 ml-0 wow animate__animated animate__fadeIn">
                                 <figure><img alt="jobhub" src="assets/imgs/page/about/img-findjob.png" /></figure>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="box-info-job pl-90 pt-30 pr-90">
-                                <span class="text-blue wow animate__animated animate__fadeInUp">Find jobs</span>
-                                <h5 class="heading-36 mb-30 mt-30 wow animate__animated animate__fadeInUp">Create free count and start apply your dream job today</h5>
-                                <p class="text-lg wow animate__animated animate__fadeInUp">
+                        <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div className="box-info-job pl-90 pt-30 pr-90">
+                                <span className="text-blue wow animate__animated animate__fadeInUp">Find jobs</span>
+                                <h5 className="heading-36 mb-30 mt-30 wow animate__animated animate__fadeInUp">Create free count and start apply your dream job today</h5>
+                                <p className="text-lg wow animate__animated animate__fadeInUp">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is
                                     simply dummy.
                                 </p>
-                                <div class="box-button-shadow mt-30 wow animate__animated animate__fadeInUp">
-                                    <a href="job-grid.html" class="btn btn-default">Explore more</a>
+                                <div className="box-button-shadow mt-30 wow animate__animated animate__fadeInUp">
+                                    <a href="job-grid.html" className="btn btn-default">Explore more</a>
                                 </div>
                             </div>
                         </div>
@@ -582,104 +582,104 @@ const Home = () => {
                 </div>
             </div>
         </section>
-        <section class="section-box mt-50 mt-md-0">
-            <div class="container">
-                <h2 class="section-title text-center mb-15 wow animate__animated animate__fadeInUp">Our Happy Customer</h2>
-                <div class="text-normal text-center color-black-5 box-mw-60 wow animate__animated animate__fadeInUp mt-20">
+        <section className="section-box mt-50 mt-md-0">
+            <div className="container">
+                <h2 className="section-title text-center mb-15 wow animate__animated animate__fadeInUp">Our Happy Customer</h2>
+                <div className="text-normal text-center color-black-5 box-mw-60 wow animate__animated animate__fadeInUp mt-20">
                     When it comes to choosing the right web hosting provider, we know how easy it is to get overwhelmed with the
                     number.
                 </div>
-                <div class="row mt-70">
-                    <div class="box-swiper">
-                        <div class="swiper-container swiper-group-3">
-                            <div class="swiper-wrapper pb-70 pt-5">
-                                <div class="swiper-slide">
-                                    <div class="card-grid-3 hover-up">
-                                        <div class="text-center card-grid-3-image card-grid-3-image-circle">
+                <div className="row mt-70">
+                    <div className="box-swiper">
+                        <div className="swiper-container swiper-group-3">
+                            <div className="swiper-wrapper pb-70 pt-5">
+                                <div className="swiper-slide">
+                                    <div className="card-grid-3 hover-up">
+                                        <div className="text-center card-grid-3-image card-grid-3-image-circle">
                                             <a href="candidates-single.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/page/about/profile.png" /></figure>
                                             </a>
                                         </div>
-                                        <div class="card-block-info mt-10">
-                                            <p class="text-lg text-center">We are on the hunt for a designer who is exceptional
+                                        <div className="card-block-info mt-10">
+                                            <p className="text-lg text-center">We are on the hunt for a designer who is exceptional
                                                 in both making incredible product interfaces as well as</p>
-                                            <div class="text-center mt-20 mb-25">
-                                                <div class="rate">
+                                            <div className="text-center mt-20 mb-25">
+                                                <div className="rate">
                                                     <input type="radio" id="star5" name="rate" value="5" />
-                                                    <label for="star5" title="text" class="checked">5 stars</label>
+                                                    <label for="star5" title="text" className="checked">5 stars</label>
                                                     <input type="radio" id="star4" name="rate" value="4" />
-                                                    <label for="star4" title="text" class="checked">4 stars</label>
+                                                    <label for="star4" title="text" className="checked">4 stars</label>
                                                     <input type="radio" id="star3" name="rate" value="3" />
-                                                    <label for="star3" title="text" class="checked">3 stars</label>
+                                                    <label for="star3" title="text" className="checked">3 stars</label>
                                                     <input type="radio" id="star2" name="rate" value="2" />
-                                                    <label for="star2" title="text" class="checked">2 stars</label>
+                                                    <label for="star2" title="text" className="checked">2 stars</label>
                                                     <input type="radio" id="star1" name="rate" value="1" />
-                                                    <label for="star1" title="text" class="checked">1 star</label>
+                                                    <label for="star1" title="text" className="checked">1 star</label>
                                                 </div>
                                             </div>
-                                            <div class="card-profile text-center">
+                                            <div className="card-profile text-center">
                                                 <strong>Katy Perry</strong>
                                                 <span>Visual Designer</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="card-grid-3 hover-up">
-                                        <div class="text-center card-grid-3-image card-grid-3-image-circle">
+                                <div className="swiper-slide">
+                                    <div className="card-grid-3 hover-up">
+                                        <div className="text-center card-grid-3-image card-grid-3-image-circle">
                                             <a href="candidates-single.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/page/about/profile2.png" /></figure>
                                             </a>
                                         </div>
-                                        <div class="card-block-info mt-10">
-                                            <p class="text-lg text-center">We are on the hunt for a designer who is exceptional
+                                        <div className="card-block-info mt-10">
+                                            <p className="text-lg text-center">We are on the hunt for a designer who is exceptional
                                                 in both making incredible product interfaces as well as</p>
-                                            <div class="text-center mt-20 mb-25">
-                                                <div class="rate">
+                                            <div className="text-center mt-20 mb-25">
+                                                <div className="rate">
                                                     <input type="radio" id="star52" name="rate" value="5" />
                                                     <label for="star52" title="text">5 stars</label>
                                                     <input type="radio" id="star42" name="rate" value="4" />
-                                                    <label for="star42" title="text" class="checked">4 stars</label>
+                                                    <label for="star42" title="text" className="checked">4 stars</label>
                                                     <input type="radio" id="star32" name="rate" value="3" />
-                                                    <label for="star32" title="text" class="checked">3 stars</label>
+                                                    <label for="star32" title="text" className="checked">3 stars</label>
                                                     <input type="radio" id="star22" name="rate" value="2" />
-                                                    <label for="star22" title="text" class="checked">2 stars</label>
+                                                    <label for="star22" title="text" className="checked">2 stars</label>
                                                     <input type="radio" id="star12" name="rate" value="1" />
-                                                    <label for="star12" title="text" class="checked">1 star</label>
+                                                    <label for="star12" title="text" className="checked">1 star</label>
                                                 </div>
                                             </div>
-                                            <div class="card-profile text-center">
+                                            <div className="card-profile text-center">
                                                 <strong>Chris Brown</strong>
                                                 <span>Visual Designer</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="card-grid-3 hover-up">
-                                        <div class="text-center card-grid-3-image card-grid-3-image-circle">
+                                <div className="swiper-slide">
+                                    <div className="card-grid-3 hover-up">
+                                        <div className="text-center card-grid-3-image card-grid-3-image-circle">
                                             <a href="candidates-single.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/page/about/profile3.png" /></figure>
                                             </a>
                                         </div>
-                                        <div class="card-block-info mt-10">
-                                            <p class="text-lg text-center">We are on the hunt for a designer who is exceptional
+                                        <div className="card-block-info mt-10">
+                                            <p className="text-lg text-center">We are on the hunt for a designer who is exceptional
                                                 in both making incredible product interfaces as well as</p>
-                                            <div class="text-center mt-20 mb-25">
-                                                <div class="rate">
+                                            <div className="text-center mt-20 mb-25">
+                                                <div className="rate">
                                                     <input type="radio" id="star53" name="rate" value="5" />
-                                                    <label for="star53" title="text" class="checked">5 stars</label>
+                                                    <label for="star53" title="text" className="checked">5 stars</label>
                                                     <input type="radio" id="star43" name="rate" value="4" />
-                                                    <label for="star43" title="text" class="checked">4 stars</label>
+                                                    <label for="star43" title="text" className="checked">4 stars</label>
                                                     <input type="radio" id="star33" name="rate" value="3" />
-                                                    <label for="star33" title="text" class="checked">3 stars</label>
+                                                    <label for="star33" title="text" className="checked">3 stars</label>
                                                     <input type="radio" id="star23" name="rate" value="2" />
-                                                    <label for="star23" title="text" class="checked">2 stars</label>
+                                                    <label for="star23" title="text" className="checked">2 stars</label>
                                                     <input type="radio" id="star13" name="rate" value="1" />
-                                                    <label for="star13" title="text" class="checked">1 star</label>
+                                                    <label for="star13" title="text" className="checked">1 star</label>
                                                 </div>
                                             </div>
-                                            <div class="card-profile text-center">
+                                            <div className="card-profile text-center">
                                                 <strong>Justin Bieber</strong>
                                                 <span>Visual Designer</span>
                                             </div>
@@ -687,56 +687,56 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-pagination swiper-pagination3"></div>
+                            <div className="swiper-pagination swiper-pagination3"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="section-box">
-            <div class="container">
-                <ul class="list-partners">
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay="0s">
+        <div className="section-box">
+            <div className="container">
+                <ul className="list-partners">
+                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay="0s">
                         <a href="#">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/samsung.svg" /></figure>
                         </a>
                     </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
+                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
                         <a href="#">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/google.svg" /></figure>
                         </a>
                     </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".2s">
+                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".2s">
                         <a href="#">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/facebook.svg" /></figure>
                         </a>
                     </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".3s">
+                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".3s">
                         <a href="#">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/pinterest.svg" /></figure>
                         </a>
                     </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".4s">
+                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".4s">
                         <a href="#">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/avaya.svg" /></figure>
                         </a>
                     </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".5s">
+                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".5s">
                         <a href="#">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/forbes.svg" /></figure>
                         </a>
                     </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
+                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
                         <a href="#">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/avis.svg" /></figure>
                         </a>
                     </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".2s">
+                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".2s">
                         <a href="#">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/nielsen.svg" /></figure>
                         </a>
                     </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".3s">
+                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".3s">
                         <a href="#">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/doordash.svg" /></figure>
                         </a>
@@ -744,177 +744,177 @@ const Home = () => {
                 </ul>
             </div>
         </div>
-        <section class="section-box mt-50">
-            <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-lg-7 col-md-7">
-                        <h2 class="section-title mb-20 wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
+        <section className="section-box mt-50">
+            <div className="container">
+                <div className="row align-items-end">
+                    <div className="col-lg-7 col-md-7">
+                        <h2 className="section-title mb-20 wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
                             From blog</h2>
-                        <p class="text-md-lh28 color-black-5 wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">Latest News & Events</p>
+                        <p className="text-md-lh28 color-black-5 wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">Latest News & Events</p>
                     </div>
-                    <div class="col-lg-5 col-md-5 text-lg-end text-start">
-                        <a href="blog-grid.html" class="btn btn-border icon-chevron-right wow animate__animated animate__fadeInUp hover-up mt-15" data-wow-delay=".1s">View more</a>
+                    <div className="col-lg-5 col-md-5 text-lg-end text-start">
+                        <a href="blog-grid.html" className="btn btn-border icon-chevron-right wow animate__animated animate__fadeInUp hover-up mt-15" data-wow-delay=".1s">View more</a>
                     </div>
                 </div>
-                <div class="row mt-70">
-                    <div class="box-swiper">
-                        <div class="swiper-container swiper-group-3">
-                            <div class="swiper-wrapper pb-70 pt-5">
-                                <div class="swiper-slide">
-                                    <div class="card-grid-3 hover-up">
-                                        <div class="text-center card-grid-3-image">
+                <div className="row mt-70">
+                    <div className="box-swiper">
+                        <div className="swiper-container swiper-group-3">
+                            <div className="swiper-wrapper pb-70 pt-5">
+                                <div className="swiper-slide">
+                                    <div className="card-grid-3 hover-up">
+                                        <div className="text-center card-grid-3-image">
                                             <a href="blog-single.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-1.png" /></figure>
                                             </a>
                                         </div>
-                                        <div class="card-block-info">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-6 text-start">
+                                        <div className="card-block-info">
+                                            <div className="row">
+                                                <div className="col-lg-6 col-6 text-start">
                                                     <span>Sarah Harding</span>
                                                 </div>
-                                                <div class="col-lg-6 col-6 text-end">
+                                                <div className="col-lg-6 col-6 text-end">
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-15 heading-md"><a href="blog-single.html">Senior Full Stack, Creator
+                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">Senior Full Stack, Creator
                                                     Success Full Time</a></h5>
-                                            <div class="card-2-bottom mt-50">
-                                                <div class="row">
-                                                    <div class="col-lg-9 col-8">
-                                                        <a href="blog-single.html" class="btn btn-border btn-brand-hover">Keep
+                                            <div className="card-2-bottom mt-50">
+                                                <div className="row">
+                                                    <div className="col-lg-9 col-8">
+                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep
                                                             reading</a>
                                                     </div>
-                                                    <div class="col-lg-3 text-md-end text-start col-4">
-                                                        <a href="#" class="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
+                                                    <div className="col-lg-3 text-md-end text-start col-4">
+                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="card-grid-3 hover-up">
-                                        <div class="text-center card-grid-3-image">
+                                <div className="swiper-slide">
+                                    <div className="card-grid-3 hover-up">
+                                        <div className="text-center card-grid-3-image">
                                             <a href="blog-single.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-2.png" /></figure>
                                             </a>
                                         </div>
-                                        <div class="card-block-info">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-6 text-start">
+                                        <div className="card-block-info">
+                                            <div className="row">
+                                                <div className="col-lg-6 col-6 text-start">
                                                     <span>Sarah Harding</span>
                                                 </div>
-                                                <div class="col-lg-6 col-6 text-end">
+                                                <div className="col-lg-6 col-6 text-end">
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-15 heading-md"><a href="blog-single.html">21 Job Tips: How To Make a
+                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">21 Job Tips: How To Make a
                                                     Great Impression</a></h5>
-                                            <div class="card-2-bottom mt-50">
-                                                <div class="row">
-                                                    <div class="col-lg-9 col-8">
-                                                        <a href="blog-single.html" class="btn btn-border btn-brand-hover">Keep
+                                            <div className="card-2-bottom mt-50">
+                                                <div className="row">
+                                                    <div className="col-lg-9 col-8">
+                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep
                                                             reading</a>
                                                     </div>
-                                                    <div class="col-lg-3 text-md-end text-start col-4">
-                                                        <a href="#" class="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
+                                                    <div className="col-lg-3 text-md-end text-start col-4">
+                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="card-grid-3 hover-up">
-                                        <div class="text-center card-grid-3-image">
+                                <div className="swiper-slide">
+                                    <div className="card-grid-3 hover-up">
+                                        <div className="text-center card-grid-3-image">
                                             <a href="blog-single.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-3.png" /></figure>
                                             </a>
                                         </div>
-                                        <div class="card-block-info">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-6 text-start">
+                                        <div className="card-block-info">
+                                            <div className="row">
+                                                <div className="col-lg-6 col-6 text-start">
                                                     <span>Sarah Harding</span>
                                                 </div>
-                                                <div class="col-lg-6 col-6 text-end">
+                                                <div className="col-lg-6 col-6 text-end">
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-15 heading-md"><a href="blog-single.html">Top SQL Query Interview
+                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">Top SQL Query Interview
                                                     Questions</a></h5>
-                                            <div class="card-2-bottom mt-50">
-                                                <div class="row">
-                                                    <div class="col-lg-9 col-8">
-                                                        <a href="blog-single.html" class="btn btn-border btn-brand-hover">Keep
+                                            <div className="card-2-bottom mt-50">
+                                                <div className="row">
+                                                    <div className="col-lg-9 col-8">
+                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep
                                                             reading</a>
                                                     </div>
-                                                    <div class="col-lg-3 text-md-end text-start col-4">
-                                                        <a href="#" class="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
+                                                    <div className="col-lg-3 text-md-end text-start col-4">
+                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="card-grid-3 hover-up">
-                                        <div class="text-center card-grid-3-image">
+                                <div className="swiper-slide">
+                                    <div className="card-grid-3 hover-up">
+                                        <div className="text-center card-grid-3-image">
                                             <a href="blog-single.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-4.png" /></figure>
                                             </a>
                                         </div>
-                                        <div class="card-block-info">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-6 text-start">
+                                        <div className="card-block-info">
+                                            <div className="row">
+                                                <div className="col-lg-6 col-6 text-start">
                                                     <span>Sarah Harding</span>
                                                 </div>
-                                                <div class="col-lg-6 col-6 text-end">
+                                                <div className="col-lg-6 col-6 text-end">
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-15 heading-md"><a href="blog-single.html">How To Write an Interview
+                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">How To Write an Interview
                                                     Reschedule
                                                     Email</a></h5>
-                                            <div class="card-2-bottom mt-50">
-                                                <div class="row">
-                                                    <div class="col-lg-9 col-8">
-                                                        <a href="blog-single.html" class="btn btn-border btn-brand-hover">Keep
+                                            <div className="card-2-bottom mt-50">
+                                                <div className="row">
+                                                    <div className="col-lg-9 col-8">
+                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep
                                                             reading</a>
                                                     </div>
-                                                    <div class="col-lg-3 text-md-end text-start col-4">
-                                                        <a href="#" class="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
+                                                    <div className="col-lg-3 text-md-end text-start col-4">
+                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="card-grid-3 hover-up">
-                                        <div class="text-center card-grid-3-image">
+                                <div className="swiper-slide">
+                                    <div className="card-grid-3 hover-up">
+                                        <div className="text-center card-grid-3-image">
                                             <a href="blog-single.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-5.png" /></figure>
                                             </a>
                                         </div>
-                                        <div class="card-block-info">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-6 text-start">
+                                        <div className="card-block-info">
+                                            <div className="row">
+                                                <div className="col-lg-6 col-6 text-start">
                                                     <span>Sarah Harding</span>
                                                 </div>
-                                                <div class="col-lg-6 col-6 text-end">
+                                                <div className="col-lg-6 col-6 text-end">
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-15 heading-md"><a href="blog-single.html">12 Peer Interview Questions
+                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">12 Peer Interview Questions
                                                     and Answers</a></h5>
-                                            <div class="card-2-bottom mt-50">
-                                                <div class="row">
-                                                    <div class="col-lg-9 col-8">
-                                                        <a href="blog-single.html" class="btn btn-border btn-brand-hover">Keep
+                                            <div className="card-2-bottom mt-50">
+                                                <div className="row">
+                                                    <div className="col-lg-9 col-8">
+                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep
                                                             reading</a>
                                                     </div>
-                                                    <div class="col-lg-3 text-md-end text-start col-4">
-                                                        <a href="#" class="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
+                                                    <div className="col-lg-3 text-md-end text-start col-4">
+                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -922,26 +922,26 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-pagination swiper-pagination3"></div>
+                            <div className="swiper-pagination swiper-pagination3"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-box mt-50 mb-60">
-            <div class="container">
-                <div class="box-newsletter">
-                    <h5 class="text-md-newsletter">Sign up to get</h5>
-                    <h6 class="text-lg-newsletter">the latest jobs</h6>
-                    <div class="box-form-newsletter mt-30">
-                        <form class="form-newsletter">
-                            <input type="text" class="input-newsletter" value="" placeholder="contact.alithemes@gmail.com" />
-                            <button class="btn btn-default font-heading icon-send-letter">Subscribe</button>
+        <section className="section-box mt-50 mb-60">
+            <div className="container">
+                <div className="box-newsletter">
+                    <h5 className="text-md-newsletter">Sign up to get</h5>
+                    <h6 className="text-lg-newsletter">the latest jobs</h6>
+                    <div className="box-form-newsletter mt-30">
+                        <form className="form-newsletter">
+                            <input type="text" className="input-newsletter" value="" placeholder="contact.alithemes@gmail.com" />
+                            <button className="btn btn-default font-heading icon-send-letter">Subscribe</button>
                         </form>
                     </div>
                 </div>
-                <div class="box-newsletter-bottom">
-                    <div class="newsletter-bottom"></div>
+                <div className="box-newsletter-bottom">
+                    <div className="newsletter-bottom"></div>
                 </div>
             </div>
         </section>
