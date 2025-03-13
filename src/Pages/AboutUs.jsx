@@ -111,7 +111,7 @@ const AboutUs = () => {
                                     simply dummy.
                                 </p>
                                 <div className="mt-30 wow animate__animated animate__fadeInUp">
-                                    <a href="job-grid.html" className="btn btn-default">Explore more</a>
+                                    <a href="/Jobs" className="btn btn-default">Explore more</a>
                                 </div>
                             </div>
                         </div>
@@ -397,7 +397,7 @@ const AboutUs = () => {
                         <p className="text-md-lh28 color-black-5 wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">Latest News & Events</p>
                     </div>
                     <div className="col-lg-5 col-md-5 text-lg-end text-start">
-                        <a href="blog-grid.html" className="btn btn-border icon-chevron-right wow animate__animated animate__fadeInUp hover-up mt-15" data-wow-delay=".1s">View more</a>
+                        <a href="/Blog" className="btn btn-border icon-chevron-right wow animate__animated animate__fadeInUp hover-up mt-15" data-wow-delay=".1s">View more</a>
                     </div>
                 </div>
                 <div className="row mt-70">
@@ -407,7 +407,7 @@ const AboutUs = () => {
                                 <div className="swiper-slide">
                                     <div className="card-grid-3 hover-up">
                                         <div className="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
+                                            <a href="/Blogdetails">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-1.png" /></figure>
                                             </a>
                                         </div>
@@ -420,12 +420,12 @@ const AboutUs = () => {
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">Senior Full Stack, Creator
+                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">Senior Full Stack, Creator
                                                     Success Full Time</a></h5>
                                             <div className="card-2-bottom mt-50">
                                                 <div className="row">
                                                     <div className="col-lg-9 col-8">
-                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep reading</a>
+                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-end col-4">
                                                         <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
@@ -438,7 +438,7 @@ const AboutUs = () => {
                                 <div className="swiper-slide">
                                     <div className="card-grid-3 hover-up">
                                         <div className="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
+                                            <a href="/Blogdetails">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-2.png" /></figure>
                                             </a>
                                         </div>
@@ -451,11 +451,11 @@ const AboutUs = () => {
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">21 Job Tips: How To Make a Great Impression</a></h5>
+                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">21 Job Tips: How To Make a Great Impression</a></h5>
                                             <div className="card-2-bottom mt-50">
                                                 <div className="row">
                                                     <div className="col-lg-9 col-8">
-                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep reading</a>
+                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-end col-4">
                                                         <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
@@ -468,7 +468,7 @@ const AboutUs = () => {
                                 <div className="swiper-slide">
                                     <div className="card-grid-3 hover-up">
                                         <div className="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
+                                            <a href="/Blogdetails">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-3.png" /></figure>
                                             </a>
                                         </div>
@@ -481,11 +481,11 @@ const AboutUs = () => {
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">Top SQL Query Interview Questions</a></h5>
+                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">Top SQL Query Interview Questions</a></h5>
                                             <div className="card-2-bottom mt-50">
                                                 <div className="row">
                                                     <div className="col-lg-9 col-8">
-                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep reading</a>
+                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-end col-4">
                                                         <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
@@ -498,7 +498,7 @@ const AboutUs = () => {
                                 <div className="swiper-slide">
                                     <div className="card-grid-3 hover-up">
                                         <div className="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
+                                            <a href="/Blogdetails">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-4.png" /></figure>
                                             </a>
                                         </div>
@@ -511,12 +511,12 @@ const AboutUs = () => {
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">How To Write an Interview Reschedule
+                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">How To Write an Interview Reschedule
                                                     Email</a></h5>
                                             <div className="card-2-bottom mt-50">
                                                 <div className="row">
                                                     <div className="col-lg-9 col-8">
-                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep reading</a>
+                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-end col-4">
                                                         <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
@@ -529,7 +529,7 @@ const AboutUs = () => {
                                 <div className="swiper-slide">
                                     <div className="card-grid-3 hover-up">
                                         <div className="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
+                                            <a href="/Blogdetails">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-5.png" /></figure>
                                             </a>
                                         </div>
@@ -542,11 +542,11 @@ const AboutUs = () => {
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">12 Peer Interview Questions and Answers</a></h5>
+                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">12 Peer Interview Questions and Answers</a></h5>
                                             <div className="card-2-bottom mt-50">
                                                 <div className="row">
                                                     <div className="col-lg-9 col-8">
-                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep reading</a>
+                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-end col-4">
                                                         <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>

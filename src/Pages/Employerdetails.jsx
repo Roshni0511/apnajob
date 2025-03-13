@@ -33,8 +33,8 @@ const Employerdetails = () => {
                         </div>
                         <div className="row align-items-end">
                             <div className="col-lg-6">
-                                <a href="job-grid.html" className="btn btn-tags-sm mb-10 mr-5">12 open jobs</a>
-                                <a href="job-list.html" className="btn btn-tags-sm mb-10 mr-5">24 completed jobs</a>
+                                <a href="/Jobs" className="btn btn-tags-sm mb-10 mr-5">12 open jobs</a>
+                                <a href="/Jobs" className="btn btn-tags-sm mb-10 mr-5">24 completed jobs</a>
                             </div>
                             <div className="col-lg-3">
                                 <a href="#" className="btn btn-default">Apply For Job</a>
@@ -198,7 +198,7 @@ const Employerdetails = () => {
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/digital.png" /></figure>
                                         </div>
                                         <div className="card-job-top--info">
-                                            <h6 className="card-job-top--info-heading"><a href="job-single.html">Digital Experience Designer</a></h6>
+                                            <h6 className="card-job-top--info-heading"><a href="/Jobdetails">Digital Experience Designer</a></h6>
                                             <div className="row">
                                                 <div className="col-lg-7">
                                                     <span className="card-job-top--company">AliStudio, Inc</span>
@@ -225,9 +225,9 @@ const Employerdetails = () => {
                                     <div className="card-job-bottom mt-25">
                                         <div className="row">
                                             <div className="col-lg-9 col-sm-8 col-12">
-                                                <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                                <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
-                                                <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
+                                                <a href="/Jobs" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                                <a href="/Jobs" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                                <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                             </div>
                                             <div className="col-lg-3 col-sm-4 col-12 text-end">
                                                 <span><img src="assets/imgs/theme/icons/shield-check.svg" alt="jobhub" /></span>
@@ -242,7 +242,7 @@ const Employerdetails = () => {
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/n-digital.png" /></figure>
                                         </div>
                                         <div className="card-job-top--info">
-                                            <h6 className="card-job-top--info-heading"><a href="job-single.html">Digital Experience Designer</a></h6>
+                                            <h6 className="card-job-top--info-heading"><a href="/Jobdetails">Digital Experience Designer</a></h6>
                                             <div className="row">
                                                 <div className="col-lg-7">
                                                     <span className="card-job-top--company">AliStudio, Inc</span>
@@ -269,9 +269,9 @@ const Employerdetails = () => {
                                     <div className="card-job-bottom mt-25">
                                         <div className="row">
                                             <div className="col-lg-9 col-sm-8 col-12">
-                                                <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                                <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
-                                                <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
+                                                <a href="/Jobs" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                                <a href="/Jobs" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                                <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                             </div>
                                             <div className="col-lg-3 col-sm-4 col-12 text-end">
                                                 <span><img src="assets/imgs/theme/icons/shield-check.svg" alt="jobhub" /></span>
@@ -286,7 +286,7 @@ const Employerdetails = () => {
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/n-digital2.png" /></figure>
                                         </div>
                                         <div className="card-job-top--info">
-                                            <h6 className="card-job-top--info-heading"><a href="job-single.html">Digital Experience Designer</a></h6>
+                                            <h6 className="card-job-top--info-heading"><a href="/Jobdetails">Digital Experience Designer</a></h6>
                                             <div className="row">
                                                 <div className="col-lg-7">
                                                     <span className="card-job-top--company">AliStudio, Inc</span>
@@ -313,9 +313,9 @@ const Employerdetails = () => {
                                     <div className="card-job-bottom mt-25">
                                         <div className="row">
                                             <div className="col-lg-9 col-sm-8 col-12">
-                                                <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                                <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
-                                                <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
+                                                <a href="/Jobs" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                                <a href="/Jobs" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                                <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                             </div>
                                             <div className="col-lg-3 col-sm-4 col-12 text-end">
                                                 <span><img src="assets/imgs/theme/icons/shield-check.svg" alt="jobhub" /></span>
@@ -330,7 +330,7 @@ const Employerdetails = () => {
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/digital.png" /></figure>
                                         </div>
                                         <div className="card-job-top--info">
-                                            <h6 className="card-job-top--info-heading"><a href="job-single.html">Digital Experience Designer</a></h6>
+                                            <h6 className="card-job-top--info-heading"><a href="/Jobdetails">Digital Experience Designer</a></h6>
                                             <div className="row">
                                                 <div className="col-lg-7">
                                                     <span className="card-job-top--company">AliStudio, Inc</span>
@@ -357,9 +357,9 @@ const Employerdetails = () => {
                                     <div className="card-job-bottom mt-25">
                                         <div className="row">
                                             <div className="col-lg-9 col-sm-8 col-12">
-                                                <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                                <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
-                                                <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
+                                                <a href="/Jobs" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                                <a href="/Jobs" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                                <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                             </div>
                                             <div className="col-lg-3 col-sm-4 col-12 text-end">
                                                 <span><img src="assets/imgs/theme/icons/shield-check.svg" alt="jobhub" /></span>
@@ -369,7 +369,7 @@ const Employerdetails = () => {
                                     </div>
                                 </div>
                                 <div className="mb-20">
-                                    <a href="job-grid.html" className="btn btn-default">Explore more</a>
+                                    <a href="/Jobs" className="btn btn-default">Explore more</a>
                                 </div>
                             </div>
                         </div>

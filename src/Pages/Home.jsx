@@ -269,7 +269,7 @@ const Home = () => {
                                 </div>
                                 <div className="list-tags-banner mt-60 text-center wow animate__animated animate__fadeInUp">
                                     <strong>Popular Searches:</strong>
-                                    <a href="#">Designer</a>, <a href="#">Developer</a>, <a href="#">Web</a>, <a href="#">Engineer</a>, <a href="#">Senior</a>,
+                                    <a href="">Designer</a>, <a href="">Developer</a>, <a href="">Web</a>, <a href="">Engineer</a>, <a href="">Senior</a>,
                                 </div>
                             </div>
                         </div>
@@ -290,15 +290,15 @@ const Home = () => {
                             <div className="card-job hover-up wow animate__animated animate__fadeInUp">
                                 <div className="card-job-top">
                                     <div className="card-job-top--image">
-                                        <a href="employers-single.html">
+                                        <a href="/Employerdetails">
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/digital.png" /></figure>
                                         </a>
                                     </div>
                                     <div className="card-job-top--info">
-                                        <h6 className="card-job-top--info-heading"><a href="job-single.html">Digital Marketing Manager</a></h6>
+                                        <h6 className="card-job-top--info-heading"><a href="/Jobdetails">Digital Marketing Manager</a></h6>
                                         <div className="row">
                                             <div className="col-md-9">
-                                                <a href="employers-list.html"><span className="card-job-top--company">AliStudio, Inc</span></a>
+                                                <a href="/Employer"><span className="card-job-top--company">AliStudio, Inc</span></a>
                                                 <span className="card-job-top--location text-sm"><i className="fi-rr-marker"></i> New York, NY</span>
                                                 <span className="card-job-top--type-job text-sm"><i className="fi-rr-briefcase"></i>Full time</span>
                                                 <span className="card-job-top--post-time text-sm"><i className="fi-rr-clock"></i> 3 mins ago</span>
@@ -316,9 +316,9 @@ const Home = () => {
                                 <div className="card-job-bottom mt-25">
                                     <div className="row">
                                         <div className="col-lg-9 col-sm-8 col-12">
-                                            <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                            <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
-                                            <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
+                                            <a href="/Jobs" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                            <a href="/Jobs" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                            <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
                                         <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
                                             <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
@@ -334,15 +334,15 @@ const Home = () => {
                             <div className="card-job hover-up wow animate__animated animate__fadeInUp">
                                 <div className="card-job-top">
                                     <div className="card-job-top--image">
-                                        <a href="employers-single.html">
+                                        <a href="/Employerdetails">
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/n-digital.png" /></figure>
                                         </a>
                                     </div>
                                     <div className="card-job-top--info">
-                                        <h6 className="card-job-top--info-heading"><a href="job-single.html">Development Team Lead</a></h6>
+                                        <h6 className="card-job-top--info-heading"><a href="/Jobdetails">Development Team Lead</a></h6>
                                         <div className="row">
                                             <div className="col-md-9">
-                                                <a href="employers-list.html"><span className="card-job-top--company">AliStudio, Inc</span></a>
+                                                <a href="/Employer"><span className="card-job-top--company">AliStudio, Inc</span></a>
                                                 <span className="card-job-top--location text-sm"><i className="fi-rr-marker"></i> New York, NY</span>
                                                 <span className="card-job-top--type-job text-sm"><i className="fi-rr-briefcase"></i>Full time</span>
                                                 <span className="card-job-top--post-time text-sm"><i className="fi-rr-clock"></i> 3 mins ago</span>
@@ -360,9 +360,9 @@ const Home = () => {
                                 <div className="card-job-bottom mt-25">
                                     <div className="row">
                                         <div className="col-lg-9 col-sm-8 col-12">
-                                            <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                            <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
-                                            <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
+                                            <a href="/Jobs" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                            <a href="/Jobs" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                            <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
                                         <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
                                             <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
@@ -378,16 +378,16 @@ const Home = () => {
                             <div className="card-job hover-up wow animate__animated animate__fadeInUp">
                                 <div className="card-job-top">
                                     <div className="card-job-top--image">
-                                        <a href="employers-single.html">
+                                        <a href="/Employerdetails">
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/n-digital2.png" /></figure>
                                         </a>
                                     </div>
                                     <div className="card-job-top--info">
-                                        <h6 className="card-job-top--info-heading"><a href="job-single.html">Hiring Online English Teachers</a>
+                                        <h6 className="card-job-top--info-heading"><a href="/Jobdetails">Hiring Online English Teachers</a>
                                         </h6>
                                         <div className="row">
                                             <div className="col-md-9">
-                                                <a href="employers-list.html"><span className="card-job-top--company">AliStudio, Inc</span></a>
+                                                <a href="/Employer"><span className="card-job-top--company">AliStudio, Inc</span></a>
                                                 <span className="card-job-top--location text-sm"><i className="fi-rr-marker"></i> New York, NY</span>
                                                 <span className="card-job-top--type-job text-sm"><i className="fi-rr-briefcase"></i>Full time</span>
                                                 <span className="card-job-top--post-time text-sm"><i className="fi-rr-clock"></i> 3 mins ago</span>
@@ -405,9 +405,9 @@ const Home = () => {
                                 <div className="card-job-bottom mt-25">
                                     <div className="row">
                                         <div className="col-lg-9 col-sm-8 col-12">
-                                            <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                            <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
-                                            <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
+                                            <a href="/Jobs" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                            <a href="/Jobs" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                            <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
                                         <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
                                             <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
@@ -423,15 +423,15 @@ const Home = () => {
                             <div className="card-job hover-u wow animate__animated animate__fadeInUp">
                                 <div className="card-job-top">
                                     <div className="card-job-top--image">
-                                        <a href="employers-single.html">
+                                        <a href="/Employerdetails">
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/digital.png" /></figure>
                                         </a>
                                     </div>
                                     <div className="card-job-top--info">
-                                        <h6 className="card-job-top--info-heading"><a href="job-single.html">Development Team Lead</a></h6>
+                                        <h6 className="card-job-top--info-heading"><a href="/Jobdetails">Development Team Lead</a></h6>
                                         <div className="row">
                                             <div className="col-md-9">
-                                                <a href="employers-list.html"><span className="card-job-top--company">AliStudio, Inc</span></a>
+                                                <a href="/Employer"><span className="card-job-top--company">AliStudio, Inc</span></a>
                                                 <span className="card-job-top--location text-sm"><i className="fi-rr-marker"></i> New York, NY</span>
                                                 <span className="card-job-top--type-job text-sm"><i className="fi-rr-briefcase"></i>Full time</span>
                                                 <span className="card-job-top--post-time text-sm"><i className="fi-rr-clock"></i> 3 mins ago</span>
@@ -449,9 +449,9 @@ const Home = () => {
                                 <div className="card-job-bottom mt-25">
                                     <div className="row">
                                         <div className="col-lg-9 col-sm-8 col-12">
-                                            <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                            <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
-                                            <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
+                                            <a href="/Jobs" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                            <a href="/Jobs" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                            <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
                                         <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
                                             <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
@@ -467,16 +467,16 @@ const Home = () => {
                             <div className="card-job hover-up wow animate__animated animate__fadeInUp">
                                 <div className="card-job-top">
                                     <div className="card-job-top--image">
-                                        <a href="employers-single.html">
+                                        <a href="/Employerdetails">
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/n-digital.png" /></figure>
                                         </a>
                                     </div>
                                     <div className="card-job-top--info">
-                                        <h6 className="card-job-top--info-heading"><a href="job-single.html">Hiring Online Chiness Teachers</a>
+                                        <h6 className="card-job-top--info-heading"><a href="/Jobdetails">Hiring Online Chiness Teachers</a>
                                         </h6>
                                         <div className="row">
                                             <div className="col-md-9">
-                                                <a href="employers-list.html"><span className="card-job-top--company">AliStudio, Inc</span></a>
+                                                <a href="/Employer"><span className="card-job-top--company">AliStudio, Inc</span></a>
                                                 <span className="card-job-top--location text-sm"><i className="fi-rr-marker"></i> New York, NY</span>
                                                 <span className="card-job-top--type-job text-sm"><i className="fi-rr-briefcase"></i>Full time</span>
                                                 <span className="card-job-top--post-time text-sm"><i className="fi-rr-clock"></i> 3 mins ago</span>
@@ -494,9 +494,9 @@ const Home = () => {
                                 <div className="card-job-bottom mt-25">
                                     <div className="row">
                                         <div className="col-lg-9 col-sm-8 col-12">
-                                            <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                            <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
-                                            <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
+                                            <a href="/Jobs" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                            <a href="/Jobs" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                            <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
                                         <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
                                             <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
@@ -512,16 +512,16 @@ const Home = () => {
                             <div className="card-job hover-up wow animate__animated animate__fadeInUp">
                                 <div className="card-job-top">
                                     <div className="card-job-top--image">
-                                        <a href="employers-single.html">
+                                        <a href="/Employerdetails">
                                             <figure><img alt="jobhub" src="assets/imgs/page/job/n-digital2.png" /></figure>
                                         </a>
                                     </div>
                                     <div className="card-job-top--info">
-                                        <h6 className="card-job-top--info-heading"><a href="job-single.html">Digital Experience Designer</a>
+                                        <h6 className="card-job-top--info-heading"><a href="/Jobdetails">Digital Experience Designer</a>
                                         </h6>
                                         <div className="row">
                                             <div className="col-md-9">
-                                                <a href="employers-list.html"><span className="card-job-top--company">AliStudio, Inc</span></a>
+                                                <a href="/Employer"><span className="card-job-top--company">AliStudio, Inc</span></a>
                                                 <span className="card-job-top--location text-sm"><i className="fi-rr-marker"></i> New York, NY</span>
                                                 <span className="card-job-top--type-job text-sm"><i className="fi-rr-briefcase"></i>Full time</span>
                                                 <span className="card-job-top--post-time text-sm"><i className="fi-rr-clock"></i> 3 mins ago</span>
@@ -539,9 +539,9 @@ const Home = () => {
                                 <div className="card-job-bottom mt-25">
                                     <div className="row">
                                         <div className="col-lg-9 col-sm-8 col-12">
-                                            <a href="job-grid.html" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
-                                            <a href="job-grid-2.html" className="btn btn-small background-blue-light mr-5">Senior</a>
-                                            <a href="job-grid.html" className="btn btn-small background-6 disc-btn">Full time</a>
+                                            <a href="/Jobs" className="btn btn-small background-urgent btn-pink mr-5">Urgent</a>
+                                            <a href="/Jobs" className="btn btn-small background-blue-light mr-5">Senior</a>
+                                            <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
                                         <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
                                             <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
@@ -574,7 +574,7 @@ const Home = () => {
                                     simply dummy.
                                 </p>
                                 <div className="box-button-shadow mt-30 wow animate__animated animate__fadeInUp">
-                                    <a href="job-grid.html" className="btn btn-default">Explore more</a>
+                                    <a href="/Jobs" className="btn btn-default">Explore more</a>
                                 </div>
                             </div>
                         </div>
@@ -582,104 +582,104 @@ const Home = () => {
                 </div>
             </div>
         </section>
-        <section className="section-box mt-50 mt-md-0">
-            <div className="container">
-                <h2 className="section-title text-center mb-15 wow animate__animated animate__fadeInUp">Our Happy Customer</h2>
-                <div className="text-normal text-center color-black-5 box-mw-60 wow animate__animated animate__fadeInUp mt-20">
+        <section class="section-box mt-50 mt-md-0">
+            <div class="container">
+                <h2 class="section-title text-center mb-15 wow animate__animated animate__fadeInUp">Our Happy Customer</h2>
+                <div class="text-normal text-center color-black-5 box-mw-60 wow animate__animated animate__fadeInUp mt-20">
                     When it comes to choosing the right web hosting provider, we know how easy it is to get overwhelmed with the
                     number.
                 </div>
-                <div className="row mt-70">
-                    <div className="box-swiper">
-                        <div className="swiper-container swiper-group-3">
-                            <div className="swiper-wrapper pb-70 pt-5">
-                                <div className="swiper-slide">
-                                    <div className="card-grid-3 hover-up">
-                                        <div className="text-center card-grid-3-image card-grid-3-image-circle">
-                                            <a href="candidates-single.html">
+                <div class="row mt-70">
+                    <div class="box-swiper">
+                        <div class="swiper-container swiper-group-3">
+                            <div class="swiper-wrapper pb-70 pt-5">
+                                <div class="swiper-slide">
+                                    <div class="card-grid-3 hover-up">
+                                        <div class="text-center card-grid-3-image card-grid-3-image-circle">
+                                            <a href="/Candidatedetails">
                                                 <figure><img alt="jobhub" src="assets/imgs/page/about/profile.png" /></figure>
                                             </a>
                                         </div>
-                                        <div className="card-block-info mt-10">
-                                            <p className="text-lg text-center">We are on the hunt for a designer who is exceptional
+                                        <div class="card-block-info mt-10">
+                                            <p class="text-lg text-center">We are on the hunt for a designer who is exceptional
                                                 in both making incredible product interfaces as well as</p>
-                                            <div className="text-center mt-20 mb-25">
-                                                <div className="rate">
+                                            <div class="text-center mt-20 mb-25">
+                                                <div class="rate">
                                                     <input type="radio" id="star5" name="rate" value="5" />
-                                                    <label for="star5" title="text" className="checked">5 stars</label>
+                                                    <label for="star5" title="text" class="checked">5 stars</label>
                                                     <input type="radio" id="star4" name="rate" value="4" />
-                                                    <label for="star4" title="text" className="checked">4 stars</label>
+                                                    <label for="star4" title="text" class="checked">4 stars</label>
                                                     <input type="radio" id="star3" name="rate" value="3" />
-                                                    <label for="star3" title="text" className="checked">3 stars</label>
+                                                    <label for="star3" title="text" class="checked">3 stars</label>
                                                     <input type="radio" id="star2" name="rate" value="2" />
-                                                    <label for="star2" title="text" className="checked">2 stars</label>
+                                                    <label for="star2" title="text" class="checked">2 stars</label>
                                                     <input type="radio" id="star1" name="rate" value="1" />
-                                                    <label for="star1" title="text" className="checked">1 star</label>
+                                                    <label for="star1" title="text" class="checked">1 star</label>
                                                 </div>
                                             </div>
-                                            <div className="card-profile text-center">
+                                            <div class="card-profile text-center">
                                                 <strong>Katy Perry</strong>
                                                 <span>Visual Designer</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="swiper-slide">
-                                    <div className="card-grid-3 hover-up">
-                                        <div className="text-center card-grid-3-image card-grid-3-image-circle">
-                                            <a href="candidates-single.html">
+                                <div class="swiper-slide">
+                                    <div class="card-grid-3 hover-up">
+                                        <div class="text-center card-grid-3-image card-grid-3-image-circle">
+                                            <a href="/Candidatedetails">
                                                 <figure><img alt="jobhub" src="assets/imgs/page/about/profile2.png" /></figure>
                                             </a>
                                         </div>
-                                        <div className="card-block-info mt-10">
-                                            <p className="text-lg text-center">We are on the hunt for a designer who is exceptional
+                                        <div class="card-block-info mt-10">
+                                            <p class="text-lg text-center">We are on the hunt for a designer who is exceptional
                                                 in both making incredible product interfaces as well as</p>
-                                            <div className="text-center mt-20 mb-25">
-                                                <div className="rate">
+                                            <div class="text-center mt-20 mb-25">
+                                                <div class="rate">
                                                     <input type="radio" id="star52" name="rate" value="5" />
                                                     <label for="star52" title="text">5 stars</label>
                                                     <input type="radio" id="star42" name="rate" value="4" />
-                                                    <label for="star42" title="text" className="checked">4 stars</label>
+                                                    <label for="star42" title="text" class="checked">4 stars</label>
                                                     <input type="radio" id="star32" name="rate" value="3" />
-                                                    <label for="star32" title="text" className="checked">3 stars</label>
+                                                    <label for="star32" title="text" class="checked">3 stars</label>
                                                     <input type="radio" id="star22" name="rate" value="2" />
-                                                    <label for="star22" title="text" className="checked">2 stars</label>
+                                                    <label for="star22" title="text" class="checked">2 stars</label>
                                                     <input type="radio" id="star12" name="rate" value="1" />
-                                                    <label for="star12" title="text" className="checked">1 star</label>
+                                                    <label for="star12" title="text" class="checked">1 star</label>
                                                 </div>
                                             </div>
-                                            <div className="card-profile text-center">
+                                            <div class="card-profile text-center">
                                                 <strong>Chris Brown</strong>
                                                 <span>Visual Designer</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="swiper-slide">
-                                    <div className="card-grid-3 hover-up">
-                                        <div className="text-center card-grid-3-image card-grid-3-image-circle">
-                                            <a href="candidates-single.html">
+                                <div class="swiper-slide">
+                                    <div class="card-grid-3 hover-up">
+                                        <div class="text-center card-grid-3-image card-grid-3-image-circle">
+                                            <a href="/Candidatedetails">
                                                 <figure><img alt="jobhub" src="assets/imgs/page/about/profile3.png" /></figure>
                                             </a>
                                         </div>
-                                        <div className="card-block-info mt-10">
-                                            <p className="text-lg text-center">We are on the hunt for a designer who is exceptional
+                                        <div class="card-block-info mt-10">
+                                            <p class="text-lg text-center">We are on the hunt for a designer who is exceptional
                                                 in both making incredible product interfaces as well as</p>
-                                            <div className="text-center mt-20 mb-25">
-                                                <div className="rate">
+                                            <div class="text-center mt-20 mb-25">
+                                                <div class="rate">
                                                     <input type="radio" id="star53" name="rate" value="5" />
-                                                    <label for="star53" title="text" className="checked">5 stars</label>
+                                                    <label for="star53" title="text" class="checked">5 stars</label>
                                                     <input type="radio" id="star43" name="rate" value="4" />
-                                                    <label for="star43" title="text" className="checked">4 stars</label>
+                                                    <label for="star43" title="text" class="checked">4 stars</label>
                                                     <input type="radio" id="star33" name="rate" value="3" />
-                                                    <label for="star33" title="text" className="checked">3 stars</label>
+                                                    <label for="star33" title="text" class="checked">3 stars</label>
                                                     <input type="radio" id="star23" name="rate" value="2" />
-                                                    <label for="star23" title="text" className="checked">2 stars</label>
+                                                    <label for="star23" title="text" class="checked">2 stars</label>
                                                     <input type="radio" id="star13" name="rate" value="1" />
-                                                    <label for="star13" title="text" className="checked">1 star</label>
+                                                    <label for="star13" title="text" class="checked">1 star</label>
                                                 </div>
                                             </div>
-                                            <div className="card-profile text-center">
+                                            <div class="card-profile text-center">
                                                 <strong>Justin Bieber</strong>
                                                 <span>Visual Designer</span>
                                             </div>
@@ -687,7 +687,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="swiper-pagination swiper-pagination3"></div>
+                            <div class="swiper-pagination swiper-pagination3"></div>
                         </div>
                     </div>
                 </div>
@@ -753,7 +753,7 @@ const Home = () => {
                         <p className="text-md-lh28 color-black-5 wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">Latest News & Events</p>
                     </div>
                     <div className="col-lg-5 col-md-5 text-lg-end text-start">
-                        <a href="blog-grid.html" className="btn btn-border icon-chevron-right wow animate__animated animate__fadeInUp hover-up mt-15" data-wow-delay=".1s">View more</a>
+                        <a href="/Blog" className="btn btn-border icon-chevron-right wow animate__animated animate__fadeInUp hover-up mt-15" data-wow-delay=".1s">View more</a>
                     </div>
                 </div>
                 <div className="row mt-70">
@@ -763,7 +763,7 @@ const Home = () => {
                                 <div className="swiper-slide">
                                     <div className="card-grid-3 hover-up">
                                         <div className="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
+                                            <a href="/Blogdetails">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-1.png" /></figure>
                                             </a>
                                         </div>
@@ -776,12 +776,12 @@ const Home = () => {
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">Senior Full Stack, Creator
+                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">Senior Full Stack, Creator
                                                     Success Full Time</a></h5>
                                             <div className="card-2-bottom mt-50">
                                                 <div className="row">
                                                     <div className="col-lg-9 col-8">
-                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep
+                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep
                                                             reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-md-end text-start col-4">
@@ -795,7 +795,7 @@ const Home = () => {
                                 <div className="swiper-slide">
                                     <div className="card-grid-3 hover-up">
                                         <div className="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
+                                            <a href="/Blogdetails">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-2.png" /></figure>
                                             </a>
                                         </div>
@@ -808,12 +808,12 @@ const Home = () => {
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">21 Job Tips: How To Make a
+                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">21 Job Tips: How To Make a
                                                     Great Impression</a></h5>
                                             <div className="card-2-bottom mt-50">
                                                 <div className="row">
                                                     <div className="col-lg-9 col-8">
-                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep
+                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep
                                                             reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-md-end text-start col-4">
@@ -827,7 +827,7 @@ const Home = () => {
                                 <div className="swiper-slide">
                                     <div className="card-grid-3 hover-up">
                                         <div className="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
+                                            <a href="/Blogdetails">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-3.png" /></figure>
                                             </a>
                                         </div>
@@ -840,12 +840,12 @@ const Home = () => {
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">Top SQL Query Interview
+                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">Top SQL Query Interview
                                                     Questions</a></h5>
                                             <div className="card-2-bottom mt-50">
                                                 <div className="row">
                                                     <div className="col-lg-9 col-8">
-                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep
+                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep
                                                             reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-md-end text-start col-4">
@@ -859,7 +859,7 @@ const Home = () => {
                                 <div className="swiper-slide">
                                     <div className="card-grid-3 hover-up">
                                         <div className="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
+                                            <a href="/Blogdetails">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-4.png" /></figure>
                                             </a>
                                         </div>
@@ -872,13 +872,13 @@ const Home = () => {
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">How To Write an Interview
+                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">How To Write an Interview
                                                     Reschedule
                                                     Email</a></h5>
                                             <div className="card-2-bottom mt-50">
                                                 <div className="row">
                                                     <div className="col-lg-9 col-8">
-                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep
+                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep
                                                             reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-md-end text-start col-4">
@@ -892,7 +892,7 @@ const Home = () => {
                                 <div className="swiper-slide">
                                     <div className="card-grid-3 hover-up">
                                         <div className="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
+                                            <a href="/Blogdetails">
                                                 <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-5.png" /></figure>
                                             </a>
                                         </div>
@@ -905,12 +905,12 @@ const Home = () => {
                                                     <span>06 September</span>
                                                 </div>
                                             </div>
-                                            <h5 className="mt-15 heading-md"><a href="blog-single.html">12 Peer Interview Questions
+                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">12 Peer Interview Questions
                                                     and Answers</a></h5>
                                             <div className="card-2-bottom mt-50">
                                                 <div className="row">
                                                     <div className="col-lg-9 col-8">
-                                                        <a href="blog-single.html" className="btn btn-border btn-brand-hover">Keep
+                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep
                                                             reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-md-end text-start col-4">
@@ -947,7 +947,10 @@ const Home = () => {
         </section>
     </main>
        <Footer />
+       
     </>
+
+    
   )
 }
 

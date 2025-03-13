@@ -22,11 +22,11 @@ const Blog = () => {
                 </h3>
                 <div className="text-center">
                     <div className="sub-categories">
-                        <a href="#" className="btn btn-tags-sm mb-10 mr-5">Recruitment</a>
-                        <a href="#" className="btn btn-tags-sm mb-10 mr-5">Branding</a>
-                        <a href="#" className="btn btn-tags-sm mb-10 mr-5">Workplage</a>
-                        <a href="#" className="btn btn-tags-sm mb-10 mr-5">Job Tips</a>
-                        <a href="#" className="btn btn-tags-sm mb-10 mr-5">Contributors</a>
+                        <a href="" className="btn btn-tags-sm mb-10 mr-5">Recruitment</a>
+                        <a href="" className="btn btn-tags-sm mb-10 mr-5">Branding</a>
+                        <a href="" className="btn btn-tags-sm mb-10 mr-5">Workplage</a>
+                        <a href="" className="btn btn-tags-sm mb-10 mr-5">Job Tips</a>
+                        <a href="" className="btn btn-tags-sm mb-10 mr-5">Contributors</a>
                     </div>
                 </div>
             </div>
@@ -337,23 +337,23 @@ const Blog = () => {
                             <h5 className="sidebar-title">Category</h5>
                             <ul>
                                 <li className="d-flex justify-content-between align-items-center">
-                                    <a href="blog-grid.html">Recruitment News</a>
+                                    <a href="">Recruitment News</a>
                                     <span className="count">28</span>
                                 </li>
                                 <li className="d-flex justify-content-between align-items-center">
-                                    <a href="blog-grid.html">Job Venues</a>
+                                    <a href="">Job Venues</a>
                                     <span className="count">32</span>
                                 </li>
                                 <li className="d-flex justify-content-between align-items-center">
-                                    <a href="blog-grid.html">Full Time Job</a>
+                                    <a href="">Full Time Job</a>
                                     <span className="count">45</span>
                                 </li>
                                 <li className="d-flex justify-content-between align-items-center">
-                                    <a href="blog-grid.html">Work From Home</a>
+                                    <a href="">Work From Home</a>
                                     <span className="count">68</span>
                                 </li>
                                 <li className="d-flex justify-content-between align-items-center">
-                                    <a href="blog-grid.html">Job Tips</a>
+                                    <a href="">Job Tips</a>
                                     <span className="count">43</span>
                                 </li>
                             </ul>

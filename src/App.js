@@ -13,11 +13,15 @@ import Blogdetails from "./Pages/Blogdetails";
 import Candidate from "./Pages/Candidate";
 import Candidatedetails from "./Pages/Candidatedetails";
 import Employerdetails from "./Pages/Employerdetails";
+import Privacypolicy from "./Pages/Privacypolicy";
+import TermsandCondition from "./Pages/TermsandCondition";
+import Demo from "./Pages/Demo";
 
 
 function App() {
   return (
     <>
+  
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/Employer" element={<Employer/>}/>
@@ -33,6 +37,16 @@ function App() {
         <Route path="/Candidate" element={<Candidate />}/>
         <Route path="/Candidatedetails" element={<Candidatedetails />}/>
         <Route path="/Employerdetails" element={<Employerdetails />}/>
+        <Route path="/Privacypolicy" element={<Privacypolicy />}/>
+        <Route path="/TermsandCondition" element={<TermsandCondition />}/>
+        <Route path="/Demo" element={<Demo />}/>
+
+      
+
+       
+
+
+
 
 
 

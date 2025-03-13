@@ -61,7 +61,7 @@ const PricingPlan = () => {
                                             <li>Unlimited users</li>
                                         </ul>
                                         <div>
-                                            <a href="#" className="btn btn-border">Choose plan</a>
+                                            <a href="" className="btn btn-border">Choose plan</a>
                                         </div>
                                     </div>
                                 </div>
@@ -95,7 +95,7 @@ const PricingPlan = () => {
                                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
                             </p>
                             <div className="mt-50 wow animate__animated animate__fadeInUp">
-                                <a href="job-grid-2.html" className="mt-sm-15 mt-lg-30 btn btn-border icon-chevron-right">Browse all</a>
+                                <a href="/Jobs" className="mt-sm-15 mt-lg-30 btn btn-border icon-chevron-right">Browse all</a>
                             </div>
                         </div>
                     </div>

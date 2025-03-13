@@ -6,7 +6,7 @@ const Employer = () => {
   return (
     <>
     <Navbar />
-
+    
     <main className="main">
         <section className="section-box-2">
             <div className="box-head-single none-bg">
@@ -100,8 +100,8 @@ const Employer = () => {
                                     </div>
                                     <div className="box-view-type">
                                         <div className="box-view-type">
-                                            <a href="employers-list.html" className="view-type"><img src="assets/imgs/theme/icons/icon-list.svg" alt="jobhub" /></a>
-                                            <a href="employers-grid.html" className="view-type"><img src="assets/imgs/theme/icons/icon-grid.svg" alt="jobhub" /></a>
+                                            <a href="/Employerdetails" className="view-type"><img src="assets/imgs/theme/icons/icon-list.svg" alt="jobhub" /></a>
+                                            <a href="/Employer" className="view-type"><img src="assets/imgs/theme/icons/icon-grid.svg" alt="jobhub" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -152,7 +152,7 @@ const Employer = () => {
                                     </div>
                                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                                         <div className="text-center mt-25 mb-5">
-                                            <a href="job-grid.html" className="btn btn-border btn-brand-hover">12 Open Jobs</a>
+                                            <a href="/Jobs" className="btn btn-border btn-brand-hover">12 Open Jobs</a>
                                         </div>
                                     </div>
                                 </div>
@@ -201,7 +201,7 @@ const Employer = () => {
                                     </div>
                                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                                         <div className="text-center mt-25 mb-5">
-                                            <a href="job-grid.html" className="btn btn-border btn-brand-hover">10 Open Jobs</a>
+                                            <a href="/Jobs" className="btn btn-border btn-brand-hover">10 Open Jobs</a>
                                         </div>
                                     </div>
                                 </div>
@@ -250,7 +250,7 @@ const Employer = () => {
                                     </div>
                                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                                         <div className="text-center mt-25 mb-5">
-                                            <a href="job-grid.html" className="btn btn-border btn-brand-hover">16 Open Jobs</a>
+                                            <a href="/Jobs" className="btn btn-border btn-brand-hover">16 Open Jobs</a>
                                         </div>
                                     </div>
                                 </div>
@@ -299,7 +299,7 @@ const Employer = () => {
                                     </div>
                                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                                         <div className="text-center mt-25 mb-5">
-                                            <a href="job-grid.html" className="btn btn-border btn-brand-hover">122 Open Jobs</a>
+                                            <a href="/Jobs" className="btn btn-border btn-brand-hover">122 Open Jobs</a>
                                         </div>
                                     </div>
                                 </div>
@@ -348,7 +348,7 @@ const Employer = () => {
                                     </div>
                                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                                         <div className="text-center mt-25 mb-5">
-                                            <a href="job-grid.html" className="btn btn-border btn-brand-hover">23 Open Jobs</a>
+                                            <a href="/Jobs" className="btn btn-border btn-brand-hover">23 Open Jobs</a>
                                         </div>
                                     </div>
                                 </div>
@@ -397,7 +397,7 @@ const Employer = () => {
                                     </div>
                                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                                         <div className="text-center mt-25 mb-5">
-                                            <a href="job-grid.html" className="btn btn-border btn-brand-hover">24 Open Jobs</a>
+                                            <a href="/Jobs" className="btn btn-border btn-brand-hover">24 Open Jobs</a>
                                         </div>
                                     </div>
                                 </div>
@@ -446,7 +446,7 @@ const Employer = () => {
                                     </div>
                                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                                         <div className="text-center mt-25 mb-5">
-                                            <a href="job-grid.html" className="btn btn-border btn-brand-hover">12 Open Jobs</a>
+                                            <a href="/Jobs" className="btn btn-border btn-brand-hover">12 Open Jobs</a>
                                         </div>
                                     </div>
                                 </div>
@@ -495,7 +495,7 @@ const Employer = () => {
                                     </div>
                                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                                         <div className="text-center mt-25 mb-5">
-                                            <a href="job-grid.html" className="btn btn-border btn-brand-hover">12 Open Jobs</a>
+                                            <a href="/Jobs" className="btn btn-border btn-brand-hover">12 Open Jobs</a>
                                         </div>
                                     </div>
                                 </div>
@@ -544,7 +544,7 @@ const Employer = () => {
                                     </div>
                                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                                         <div className="text-center mt-25 mb-5">
-                                            <a href="job-grid.html" className="btn btn-border btn-brand-hover">12 Open Jobs</a>
+                                            <a href="/Jobs" className="btn btn-border btn-brand-hover">12 Open Jobs</a>
                                         </div>
                                     </div>
                                 </div>
@@ -593,7 +593,7 @@ const Employer = () => {
                                     </div>
                                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                                         <div className="text-center mt-25 mb-5">
-                                            <a href="job-grid.html" className="btn btn-border btn-brand-hover">12 Open Jobs</a>
+                                            <a href="/Jobs" className="btn btn-border btn-brand-hover">12 Open Jobs</a>
                                         </div>
                                     </div>
                                 </div>
@@ -642,7 +642,7 @@ const Employer = () => {
                                     </div>
                                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                                         <div className="text-center mt-25 mb-5">
-                                            <a href="job-grid.html" className="btn btn-border btn-brand-hover">12 Open Jobs</a>
+                                            <a href="/Jobs" className="btn btn-border btn-brand-hover">12 Open Jobs</a>
                                         </div>
                                     </div>
                                 </div>
@@ -691,7 +691,7 @@ const Employer = () => {
                                     </div>
                                     <div className="card-2-bottom card-2-bottom-candidate mt-30">
                                         <div className="text-center mt-25 mb-5">
-                                            <a href="job-grid.html" className="btn btn-border btn-brand-hover">12 Open Jobs</a>
+                                            <a href="/Jobs" className="btn btn-border btn-brand-hover">12 Open Jobs</a>
                                         </div>
                                     </div>
                                 </div>

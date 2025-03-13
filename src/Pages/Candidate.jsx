@@ -99,8 +99,8 @@ const Candidate = () => {
                                         </ul>
                                     </div>
                                     <div className="box-view-type">
-                                        <a href="candidates-list.html" className="view-type"><img src="assets/imgs/theme/icons/icon-list.svg" alt="jobhub" /></a>
-                                        <a href="candidates-grid.html" className="view-type"><img src="assets/imgs/theme/icons/icon-grid.svg" alt="jobhub" /></a>
+                                        <a href="/Candidatedetails" className="view-type"><img src="assets/imgs/theme/icons/icon-list.svg" alt="jobhub" /></a>
+                                        <a href="/Candidate" className="view-type"><img src="assets/imgs/theme/icons/icon-grid.svg" alt="jobhub" /></a>
                                     </div>
                                 </div>
                             </div>

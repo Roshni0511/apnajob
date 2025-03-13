@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="container">
             <div className="row">
                 <div className="col-md-4 col-sm-12">
-                    <a href="index.html"><img alt="jobhub" src="assets/imgs/theme/jobhub-logo.svg" /></a>
+                    <a href="/"><img alt="jobhub" src="assets/imgs/theme/jobhub-logo.svg" /></a>
                     <div className="mt-20 mb-20">Jobhub is the heart of the design community and the best resource to discover and connect with designers and jobs worldwide.</div>
                 </div>
                 <div className="col-md-2 col-xs-6">
@@ -40,9 +40,9 @@ const Footer = () => {
                 <div className="col-md-2 col-xs-6">
                     <h6>Support</h6>
                     <ul className="menu-footer mt-40">
-                        <li><a href="#">Privacy</a></li>
+                        <li><a href="/Privacypolicy">Privacy & Policy</a></li>
                         <li><a href="#">Help</a></li>
-                        <li><a href="#">Terms</a></li>
+                        <li><a href="/TermsandCondition">Terms & Condition</a></li>
                         <li><a href="/FAQS">FAQ</a></li>
                     </ul>
                 </div>

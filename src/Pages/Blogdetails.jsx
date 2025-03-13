@@ -69,7 +69,7 @@ const Blogdetails = () => {
                             </div>
                             <div className="author-bio p-30 mt-50 border-radius-15 bg-white">
                                 <div className="author-image mb-15">
-                                    <a href="author.html"><img src="assets/imgs/avatar/ava_14.png" alt="" className="avatar" /></a>
+                                    <a href=""><img src="assets/imgs/avatar/ava_14.png" alt="" className="avatar" /></a>
                                     <div className="author-infor">
                                         <h5 className="mb-5">Steven Job</h5>
                                         <p className="mb-0 text-muted font-xs">
@@ -90,37 +90,37 @@ const Blogdetails = () => {
                                         <div className="swiper-wrapper pb-30 pt-5">
                                             <div className="swiper-slide">
                                                 <div className="card-grid-3 hover-up p-15">
-                                                    <a href="blog-single.html">
+                                                    <a href="/Blogdetails">
                                                         <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-1.png" /></figure>
                                                     </a>
-                                                    <h6 className="heading-md mt-15 mb-0"><a href="blog-single.html">Senior Full Stack, Creator Success Full Time</a></h6>
+                                                    <h6 className="heading-md mt-15 mb-0"><a href="/Blogdetails">Senior Full Stack, Creator Success Full Time</a></h6>
                                                 </div>
                                             </div>
 
                                             <div className="swiper-slide">
                                                 <div className="card-grid-3 hover-up p-15">
-                                                    <a href="blog-single.html">
+                                                    <a href="/Blogdetails">
                                                         <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-2.png" /></figure>
                                                     </a>
-                                                    <h6 className="heading-md mt-15 mb-0"><a href="blog-single.html">21 Job Tips: Make a Great Impression For You</a></h6>
+                                                    <h6 className="heading-md mt-15 mb-0"><a href="/Blogdetails">21 Job Tips: Make a Great Impression For You</a></h6>
                                                 </div>
                                             </div>
 
                                             <div className="swiper-slide">
                                                 <div className="card-grid-3 hover-up p-15">
-                                                    <a href="blog-single.html">
+                                                    <a href="/Blogdetails">
                                                         <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-3.png" /></figure>
                                                     </a>
-                                                    <h6 className="heading-md mt-15 mb-0"><a href="blog-single.html">How To Break Up Your Day In Morning</a></h6>
+                                                    <h6 className="heading-md mt-15 mb-0"><a href="/Blogdetails">How To Break Up Your Day In Morning</a></h6>
                                                 </div>
                                             </div>
 
                                             <div className="swiper-slide">
                                                 <div className="card-grid-3 hover-up p-15">
-                                                    <a href="blog-single.html">
+                                                    <a href="/Blogdetails">
                                                         <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-4.png" /></figure>
                                                     </a>
-                                                    <h6 className="heading-md mt-15 mb-0"><a href="blog-single.html">How To Create a Resume for a Job In France</a></h6>
+                                                    <h6 className="heading-md mt-15 mb-0"><a href="/Blogdetails">How To Create a Resume for a Job In France</a></h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -144,23 +144,23 @@ const Blogdetails = () => {
                             <h5 className="sidebar-title">Category</h5>
                             <ul>
                                 <li className="d-flex justify-content-between align-items-center">
-                                    <a href="blog-grid.html">Recruitment News</a>
+                                    <a href="/Blog">Recruitment News</a>
                                     <span className="count">28</span>
                                 </li>
                                 <li className="d-flex justify-content-between align-items-center">
-                                    <a href="blog-grid.html">Job Venues</a>
+                                    <a href="/Blog">Job Venues</a>
                                     <span className="count">32</span>
                                 </li>
                                 <li className="d-flex justify-content-between align-items-center">
-                                    <a href="blog-grid.html">Full Time Job</a>
+                                    <a href="/Blog">Full Time Job</a>
                                     <span className="count">45</span>
                                 </li>
                                 <li className="d-flex justify-content-between align-items-center">
-                                    <a href="blog-grid.html">Work From Home</a>
+                                    <a href="/Blog">Work From Home</a>
                                     <span className="count">68</span>
                                 </li>
                                 <li className="d-flex justify-content-between align-items-center">
-                                    <a href="blog-grid.html">Job Tips</a>
+                                    <a href="/Blog">Job Tips</a>
                                     <span className="count">43</span>
                                 </li>
                             </ul>
