@@ -321,8 +321,8 @@ const Home = () => {
                                             <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
                                         <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
-                                            <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
-                                            <a href="#" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
+                                            <a href="" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
+                                            <a href="" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -365,8 +365,8 @@ const Home = () => {
                                             <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
                                         <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
-                                            <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
-                                            <a href="#" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
+                                            <a href="" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
+                                            <a href="" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -410,8 +410,8 @@ const Home = () => {
                                             <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
                                         <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
-                                            <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
-                                            <a href="#" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
+                                            <a href="" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
+                                            <a href="" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -454,8 +454,8 @@ const Home = () => {
                                             <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
                                         <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
-                                            <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
-                                            <a href="#" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
+                                            <a href="" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
+                                            <a href="" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -499,8 +499,8 @@ const Home = () => {
                                             <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
                                         <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
-                                            <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
-                                            <a href="#" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
+                                            <a href="" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
+                                            <a href="" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -544,8 +544,8 @@ const Home = () => {
                                             <a href="/Jobs" className="btn btn-small background-6 disc-btn">Full time</a>
                                         </div>
                                         <div className="col-lg-3 col-sm-4 col-12 text-end pt-5 pt-sm-15">
-                                            <a href="#" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
-                                            <a href="#" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
+                                            <a href="" className="text-lg color-muted"><i className="fi-rr-shield-check"></i></a>
+                                            <a href="" className="ml-5 text-lg color-muted"><i className="fi-rr-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -697,47 +697,47 @@ const Home = () => {
             <div className="container">
                 <ul className="list-partners">
                     <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay="0s">
-                        <a href="#">
+                        <a href="">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/samsung.svg" /></figure>
                         </a>
                     </li>
                     <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
-                        <a href="#">
+                        <a href="">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/google.svg" /></figure>
                         </a>
                     </li>
                     <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".2s">
-                        <a href="#">
+                        <a href="">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/facebook.svg" /></figure>
                         </a>
                     </li>
                     <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".3s">
-                        <a href="#">
+                        <a href="">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/pinterest.svg" /></figure>
                         </a>
                     </li>
                     <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".4s">
-                        <a href="#">
+                        <a href="">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/avaya.svg" /></figure>
                         </a>
                     </li>
                     <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".5s">
-                        <a href="#">
+                        <a href="">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/forbes.svg" /></figure>
                         </a>
                     </li>
                     <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
-                        <a href="#">
+                        <a href="">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/avis.svg" /></figure>
                         </a>
                     </li>
                     <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".2s">
-                        <a href="#">
+                        <a href="">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/nielsen.svg" /></figure>
                         </a>
                     </li>
                     <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".3s">
-                        <a href="#">
+                        <a href="">
                             <figure><img alt="jobhub" src="assets/imgs/jobs/logos/doordash.svg" /></figure>
                         </a>
                     </li>
@@ -785,7 +785,7 @@ const Home = () => {
                                                             reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-md-end text-start col-4">
-                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
+                                                        <a href="" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -817,7 +817,7 @@ const Home = () => {
                                                             reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-md-end text-start col-4">
-                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
+                                                        <a href="" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -849,7 +849,7 @@ const Home = () => {
                                                             reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-md-end text-start col-4">
-                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
+                                                        <a href="" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -882,7 +882,7 @@ const Home = () => {
                                                             reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-md-end text-start col-4">
-                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
+                                                        <a href="" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -914,7 +914,7 @@ const Home = () => {
                                                             reading</a>
                                                     </div>
                                                     <div className="col-lg-3 text-md-end text-start col-4">
-                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
+                                                        <a href="" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
                                                     </div>
                                                 </div>
                                             </div>
