@@ -1,8 +1,53 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { FaRegBookmark } from "react-icons/fa";
+const testimonials = [
+    {
+      name: "Chris Brown",
+      role: "Visual Designer",
+      image: "/assets/imgs/page/about/profile2.png",
+      rating: 4,
+    },
+    {
+      name: "Justin Bieber",
+      role: "Visual Designer",
+      image: "/assets/imgs/page/about/profile3.png",
+      rating: 5,
+    },
+    {
+      name: "Katy Perry",
+      role: "Visual Designer",
+      image: "/assets/imgs/page/about/profile.png",
+      rating: 5,
+    },
+    {
+      name: "Michael Jordan",
+      role: "Graphic Designer",
+      image: "/assets/imgs/page/about/profile2.png",
+      rating: 4,
+    },
+    {
+      name: "Emma Watson",
+      role: "UI/UX Designer",
+      image: "/assets/imgs/page/about/profile3.png",
+      rating: 5,
+    },
+  ];
 
 const AboutUs = () => {
+    const blogs = [
+        { image: "assets/imgs/blog/img-blog-1.png", title: "Senior Full Stack, Creator Success Full Time" },
+        { image: "assets/imgs/blog/img-blog-2.png", title: "21 Job Tips: How To Make a Great Impression" },
+        { image: "assets/imgs/blog/img-blog-3.png", title: "Top SQL Query Interview Questions" },
+        { image: "assets/imgs/blog/img-blog-4.png", title: "How To Write an Interview Reschedule Email" },
+        { image: "assets/imgs/blog/img-blog-5.png", title: "12 Peer Interview Questions and Answers" }
+    ];
   return (
     <>
            <Navbar />
@@ -303,266 +348,183 @@ const AboutUs = () => {
                 </div>
             </div>
         </section>
-        <section className="section-box mt-80 mt-md-50">
-            <div className="container">
-                <h2 className="text-center mb-15 section-title wow animate__animated animate__fadeInUp">Our Happy Customer</h2>
-                <div className="text-normal text-center color-black-5 box-mw-60 wow animate__animated animate__fadeInUp">
-                    When it comes to choosing the right web hosting provider, we know how easy it is to get overwhelmed with the number.
-                </div>
-                <div className="row mt-70">
-                    <div className="box-swiper">
-                        <div className="swiper-container swiper-group-3">
-                            <div className="swiper-wrapper pb-70 pt-5">
-                                <div className="swiper-slide">
-                                    <div className="card-grid-3 hover-up">
-                                        <div className="text-center card-grid-3-image card-grid-3-image-circle">
-                                            <a href="#">
-                                                <figure><img alt="jobhub" src="assets/imgs/page/about/profile.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div className="card-block-info mt-10">
-                                            <p className="text-lg text-center">We are on the hunt for a designer who is exceptional in both making incredible product interfaces as well as</p>
-                                            <div className="text-center mt-20 mb-25">
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                            </div>
-                                            <div className="card-profile text-center">
-                                                <strong>Sarah Harding</strong>
-                                                <span>Visual Designer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="card-grid-3 hover-up">
-                                        <div className="text-center card-grid-3-image card-grid-3-image-circle">
-                                            <a href="#">
-                                                <figure><img alt="jobhub" src="assets/imgs/page/about/profile2.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div className="card-block-info mt-10">
-                                            <p className="text-lg text-center">We are on the hunt for a designer who is exceptional in both making incredible product interfaces as well as</p>
-                                            <div className="text-center mt-20 mb-25 card-block-rating">
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                            </div>
-                                            <div className="card-profile text-center">
-                                                <strong>Sarah Harding</strong>
-                                                <span>Visual Designer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="card-grid-3 hover-up">
-                                        <div className="text-center card-grid-3-image card-grid-3-image-circle">
-                                            <a href="#">
-                                                <figure><img alt="jobhub" src="assets/imgs/page/about/profile3.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div className="card-block-info mt-10">
-                                            <p className="text-lg text-center">We are on the hunt for a designer who is exceptional in both making incredible product interfaces as well as</p>
-                                            <div className="text-center mt-20 mb-25">
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                                <span><img alt="jobhub" src="assets/imgs/theme/icons/star.svg" /></span>
-                                            </div>
-                                            <div className="card-profile text-center">
-                                                <strong>Sarah Harding</strong>
-                                                <span>Visual Designer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="swiper-pagination swiper-pagination3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section className="section-box mt-50">
-            <div className="container">
-                <div className="row align-items-end">
-                    <div className="col-lg-7 col-md-7">
-                        <h2 className="section-title mb-20 wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">From blog</h2>
-                        <p className="text-md-lh28 color-black-5 wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">Latest News & Events</p>
-                    </div>
-                    <div className="col-lg-5 col-md-5 text-lg-end text-start">
-                        <a href="/Blog" className="btn btn-border icon-chevron-right wow animate__animated animate__fadeInUp hover-up mt-15" data-wow-delay=".1s">View more</a>
-                    </div>
-                </div>
-                <div className="row mt-70">
-                    <div className="box-swiper">
-                        <div className="swiper-container swiper-group-3">
-                            <div className="swiper-wrapper pb-70 pt-5">
-                                <div className="swiper-slide">
-                                    <div className="card-grid-3 hover-up">
-                                        <div className="text-center card-grid-3-image">
-                                            <a href="/Blogdetails">
-                                                <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-1.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div className="card-block-info">
-                                            <div className="row">
-                                                <div className="col-lg-6 col-6 text-start">
-                                                    <span>Sarah Harding</span>
-                                                </div>
-                                                <div className="col-lg-6 col-6 text-end">
-                                                    <span>06 September</span>
-                                                </div>
-                                            </div>
-                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">Senior Full Stack, Creator
-                                                    Success Full Time</a></h5>
-                                            <div className="card-2-bottom mt-50">
-                                                <div className="row">
-                                                    <div className="col-lg-9 col-8">
-                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep reading</a>
-                                                    </div>
-                                                    <div className="col-lg-3 text-end col-4">
-                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="card-grid-3 hover-up">
-                                        <div className="text-center card-grid-3-image">
-                                            <a href="/Blogdetails">
-                                                <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-2.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div className="card-block-info">
-                                            <div className="row">
-                                                <div className="col-lg-6 col-6 text-start">
-                                                    <span>Sarah Harding</span>
-                                                </div>
-                                                <div className="col-lg-6 col-6 text-end">
-                                                    <span>06 September</span>
-                                                </div>
-                                            </div>
-                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">21 Job Tips: How To Make a Great Impression</a></h5>
-                                            <div className="card-2-bottom mt-50">
-                                                <div className="row">
-                                                    <div className="col-lg-9 col-8">
-                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep reading</a>
-                                                    </div>
-                                                    <div className="col-lg-3 text-end col-4">
-                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="card-grid-3 hover-up">
-                                        <div className="text-center card-grid-3-image">
-                                            <a href="/Blogdetails">
-                                                <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-3.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div className="card-block-info">
-                                            <div className="row">
-                                                <div className="col-lg-6 col-6 text-start">
-                                                    <span>Sarah Harding</span>
-                                                </div>
-                                                <div className="col-lg-6 col-6 text-end">
-                                                    <span>06 September</span>
-                                                </div>
-                                            </div>
-                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">Top SQL Query Interview Questions</a></h5>
-                                            <div className="card-2-bottom mt-50">
-                                                <div className="row">
-                                                    <div className="col-lg-9 col-8">
-                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep reading</a>
-                                                    </div>
-                                                    <div className="col-lg-3 text-end col-4">
-                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="card-grid-3 hover-up">
-                                        <div className="text-center card-grid-3-image">
-                                            <a href="/Blogdetails">
-                                                <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-4.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div className="card-block-info">
-                                            <div className="row">
-                                                <div className="col-lg-6 col-6 text-start">
-                                                    <span>Sarah Harding</span>
-                                                </div>
-                                                <div className="col-lg-6 col-6 text-end">
-                                                    <span>06 September</span>
-                                                </div>
-                                            </div>
-                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">How To Write an Interview Reschedule
-                                                    Email</a></h5>
-                                            <div className="card-2-bottom mt-50">
-                                                <div className="row">
-                                                    <div className="col-lg-9 col-8">
-                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep reading</a>
-                                                    </div>
-                                                    <div className="col-lg-3 text-end col-4">
-                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="card-grid-3 hover-up">
-                                        <div className="text-center card-grid-3-image">
-                                            <a href="/Blogdetails">
-                                                <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-5.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div className="card-block-info">
-                                            <div className="row">
-                                                <div className="col-lg-6 col-6 text-start">
-                                                    <span>Sarah Harding</span>
-                                                </div>
-                                                <div className="col-lg-6 col-6 text-end">
-                                                    <span>06 September</span>
-                                                </div>
-                                            </div>
-                                            <h5 className="mt-15 heading-md"><a href="/Blogdetails">12 Peer Interview Questions and Answers</a></h5>
-                                            <div className="card-2-bottom mt-50">
-                                                <div className="row">
-                                                    <div className="col-lg-9 col-8">
-                                                        <a href="/Blogdetails" className="btn btn-border btn-brand-hover">Keep reading</a>
-                                                    </div>
-                                                    <div className="col-lg-3 text-end col-4">
-                                                        <a href="#" className="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="swiper-pagination swiper-pagination3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+             <section className="section-box mt-50 mt-md-0">
+         <div className="container">
+           <h2 className="section-title text-center mb-15 wow animate__animated animate__fadeInUp">Our Happy Customer</h2>
+           <div className="text-normal text-center color-black-5 box-mw-60 wow animate__animated animate__fadeInUp mt-20">
+             When it comes to choosing the right web hosting provider, we know how easy it is to get overwhelmed with the number.
+           </div>
+       
+           <div className="row mt-70">
+             <div className="box-swiper">
+               <Swiper
+                 modules={[Navigation, Pagination, Autoplay]}
+                 spaceBetween={20}
+                 loop={true}
+                 pagination={{ clickable: true }}
+                 navigation
+                 autoplay={{ delay: 3000 }}
+                 breakpoints={{
+                   320: {
+                     slidesPerView: 1,
+                   },
+                   768: {
+                     slidesPerView: 2,
+                   },
+                   1024: {
+                     slidesPerView: 3,
+                   },
+                 }}
+                 className="swiper-container"
+               >
+                 {testimonials.map((testimonial, index) => (
+                   <SwiperSlide key={index}>
+                     <div className="testimonial-slide">
+                       <div className="card-grid hover-up top-card">
+                         <div className="text-center card-image">
+                           <img
+                             src={testimonial.image}
+                             alt={testimonial.name}
+                             style={{ width: '100px', height: '100px', borderRadius: '50%' }}
+                           />
+                         </div>
+                         <div className="card-info">
+                           <p className="text-center">
+                             We are on the hunt for a designer who is exceptional in both
+                             making incredible product interfaces as well as
+                           </p>
+                           <div className="text-center rating">
+                             {"⭐".repeat(testimonial.rating)}
+                           </div>
+                           <div className="text-center profile">
+                             <strong>{testimonial.name}</strong>
+                             <span>{testimonial.role}</span>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </SwiperSlide>
+                 ))}
+               </Swiper>
+             </div>
+           </div>
+         </div>
+       </section>
+              <section className="section-box mt-50">
+         <div className="container">
+           <div className="row align-items-end">
+             <div className="col-lg-7 col-md-7">
+               <h2 className="section-title mb-20 wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
+                 From blog
+               </h2>
+               <p className="text-md-lh28 color-black-5 wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
+                 Latest News & Events
+               </p>
+             </div>
+             <div className="col-lg-5 col-md-5 text-lg-end text-start">
+               <a href="/Blog" className="btn btn-border icon-chevron-right wow animate__animated animate__fadeInUp hover-up mt-15" data-wow-delay=".1s">
+                 View more
+               </a>
+             </div>
+           </div>
+       
+           <div className="row mt-70">
+             <div className="box-swiper">
+               <Swiper
+                 modules={[Navigation, Pagination, Autoplay]}
+                 spaceBetween={20}
+                 loop={true}
+                 navigation
+                 pagination={{ clickable: true, el: ".custom-pagination" }}
+                 autoplay={{ delay: 3000 }}
+                 breakpoints={{
+                   320: {
+                     slidesPerView: 1,
+                   },
+                   768: {
+                     slidesPerView: 2,
+                   },
+                   1024: {
+                     slidesPerView: 3,
+                   },
+                 }}
+               >
+                 {blogs.map((blog, index) => (
+                   <SwiperSlide key={index}>
+                     <div
+                       className="card-grid-3 hover-up"
+                       style={{
+                         height: "450px",
+                         display: "flex",
+                         flexDirection: "column",
+                         justifyContent: "space-between",
+                         alignItems: "center",
+                         position: "relative"
+                       }}
+                     >
+                       <div className="text-center card-grid-3-image" style={{ width: "100%", flexShrink: 0 }}>
+                         <a href="/Blogdetails">
+                           <figure>
+                             <img
+                               src={blog.image}
+                               alt="blog"
+                               style={{
+                                 width: "100%",
+                                 height: "200px",
+                                 objectFit: "cover"
+                               }}
+                             />
+                           </figure>
+                         </a>
+                       </div>
+                       <div
+                         className="card-block-info"
+                         style={{
+                           flexGrow: 1,
+                           display: "flex",
+                           flexDirection: "column",
+                           justifyContent: "space-between",
+                           textAlign: "center",
+                           width: "100%",
+                           padding: "10px 20px",
+                           position: "relative"
+                         }}
+                       >
+                         <h5 className="mt-15 heading-md">
+                           <a href="/Blogdetails">{blog.title}</a>
+                         </h5>
+                         <div
+                           className="card-2-bottom"
+                           style={{
+                             marginTop: "auto",
+                             paddingBottom: "15px",
+                             display: "flex",
+                             justifyContent: "space-between",
+                             alignItems: "center"
+                           }}
+                         >
+                           <a href="/Blogdetails" className="btn btn-border btn-brand-hover">
+                             Keep Reading
+                           </a>
+                           <FaRegBookmark
+                             style={{
+                               fontSize: "20px",
+                               color: "#666",
+                               cursor: "pointer"
+                             }}
+                           />
+                         </div>
+                       </div>
+                     </div>
+                   </SwiperSlide>
+                 ))}
+               </Swiper>
+               <div className="custom-pagination" style={{ marginTop: "20px", textAlign: "center" }}></div>
+             </div>
+           </div>
+         </div>
+       </section>
+       
         <section className="section-box mt-50 mb-60">
             <div className="container">
                 <div className="box-newsletter">

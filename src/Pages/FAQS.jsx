@@ -11,7 +11,7 @@ const FAQS = () => {
             <div className="container pt-50">
                 <div className="w-50 w-md-100 mx-auto text-center">
                     <h1 className="section-title-large mb-30 wow animate__animated animate__fadeInUp">FAQs</h1>
-                    <p className="mb-30 text-muted wow animate__animated animate__fadeInUp font-md">This is part of our help center where frequently asked questions are collected. Do a search here before sending a message or contacting us, here are the most common problems you will encounter when using our system.</p>
+                    <p className="mb-30 text-muted wow animate__animated animate__fadeInUp font-md" style={{textAlign:'justify'}}>This is part of our help center where frequently asked questions are collected. Do a search here before sending a message or contacting us, here are the most common problems you will encounter when using our system.</p>
                 </div>
             </div>
         </section>
@@ -43,7 +43,7 @@ const FAQS = () => {
                     </div>
                     <div className="col-lg-2"></div>
                     <div className="col-lg-5">
-                        <p className="text-lg text-muted wow animate__animated animate__fadeInUp">
+                        <p className="text-lg text-muted wow animate__animated animate__fadeInUp"  style={{textAlign:'justify'}}>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is
                             simply dummy.
                         </p>
@@ -60,10 +60,10 @@ const FAQS = () => {
                                 </h2>
                                 <div id="flush-collapseOne" className="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div className="accordion-body">
-                                        <p className="mb-15">
+                                        <p className="mb-15"  style={{textAlign:'justify'}}>
                                             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
                                         </p>
-                                        <p>
+                                        <p  style={{textAlign:'justify'}}>
                                             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
                                         </p>
                                     </div>
@@ -76,7 +76,7 @@ const FAQS = () => {
                                     </button>
                                 </h2>
                                 <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                    <div className="accordion-body">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</div>
+                                    <div className="accordion-body"  style={{textAlign:'justify'}}>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</div>
                                 </div>
                             </div>
                             <div className="accordion-item">
@@ -86,7 +86,7 @@ const FAQS = () => {
                                     </button>
                                 </h2>
                                 <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                    <div className="accordion-body">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</div>
+                                    <div className="accordion-body"  style={{textAlign:'justify'}}>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</div>
                                 </div>
                             </div>
                             <div className="accordion-item">
@@ -96,7 +96,7 @@ const FAQS = () => {
                                     </button>
                                 </h2>
                                 <div id="flush-collapseFour" className="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                    <div className="accordion-body">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</div>
+                                    <div className="accordion-body"  style={{textAlign:'justify'}}>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</div>
                                 </div>
                             </div>
                         </div>
@@ -111,10 +111,10 @@ const FAQS = () => {
                                 </h2>
                                 <div id="flush-collapseOne2" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample2">
                                     <div className="accordion-body">
-                                        <p className="mb-15">
+                                        <p className="mb-15"  style={{textAlign:'justify'}}>
                                             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
                                         </p>
-                                        <p>
+                                        <p  style={{textAlign:'justify'}}>
                                             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
                                         </p>
                                     </div>
@@ -127,7 +127,7 @@ const FAQS = () => {
                                     </button>
                                 </h2>
                                 <div id="flush-collapseTwo2" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo2" data-bs-parent="#accordionFlushExample2">
-                                    <div className="accordion-body">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</div>
+                                    <div className="accordion-body"  style={{textAlign:'justify'}}>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</div>
                                 </div>
                             </div>
                             <div className="accordion-item">
@@ -137,7 +137,7 @@ const FAQS = () => {
                                     </button>
                                 </h2>
                                 <div id="flush-collapseThree2" className="accordion-collapse collapse" aria-labelledby="flush-headingThree2" data-bs-parent="#accordionFlushExample2">
-                                    <div className="accordion-body">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</div>
+                                    <div className="accordion-body"  style={{textAlign:'justify'}}>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</div>
                                 </div>
                             </div>
                             <div className="accordion-item">
@@ -148,7 +148,7 @@ const FAQS = () => {
                                 </h2>
                                 <div id="flush-collapseFour2" className="accordion-collapse collapse show" aria-labelledby="flush-headingFour2" data-bs-parent="#accordionFlushExample2">
                                     <div className="accordion-body">
-                                        <p className="mb-15">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                                        <p className="mb-15"  style={{textAlign:'justify'}}>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
                                         <p><a href="#">Read more</a></p>
                                     </div>
                                 </div>
@@ -165,8 +165,8 @@ const FAQS = () => {
                     <div className="col-lg-5 col-md-12 col-sm-12 col-12">
                         <span className="text-lg text-brand wow animate__animated animate__fadeInUp">Online Marketing</span>
                         <h3 className="mt-20 mb-30 wow animate__animated animate__fadeInUp">Committed to top quality and results</h3>
-                        <p className="mb-20 wow animate__animated animate__fadeInUp">Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor imperdiet neccon sequata congue idsem. Maecenas malesuada faucibus finibus. </p>
-                        <p className="mb-30 wow animate__animated animate__fadeInUp">Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor imperdiet neccon sequata congue idsem. Maecenas malesuada faucibus finibus. </p>
+                        <p className="mb-20 wow animate__animated animate__fadeInUp"  style={{textAlign:'justify'}}>Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor imperdiet neccon sequata congue idsem. Maecenas malesuada faucibus finibus. </p>
+                        <p className="mb-30 wow animate__animated animate__fadeInUp"  style={{textAlign:'justify'}}>Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor imperdiet neccon sequata congue idsem. Maecenas malesuada faucibus finibus. </p>
                         <div className="mt-10 wow animate__animated animate__fadeInUp">
                             <a href="#" className="btn btn-default">Learn more</a>
                         </div>
@@ -187,7 +187,7 @@ const FAQS = () => {
                 <h3 className="mb-20">Want to talk about ideas? <br />Let's get started right now.</h3>
                 <div className="row">
                     <div className="col-lg-6">
-                        <p className="text-gray-200">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <p className="text-gray-200"  style={{textAlign:'justify'}}>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                     </div>
                     <div className="col-lg-6 pl-100 pl-md-15 mt-md-50">
                         <div className="box-button-shadow mr-20">

@@ -717,52 +717,206 @@ const Employer = () => {
         </section>
         <div className="section-box">
             <div className="container">
-                <ul className="list-partners">
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay="0s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/samsung.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/google.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".2s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/facebook.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".3s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/pinterest.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".4s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/avaya.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".5s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/forbes.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/avis.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".2s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/nielsen.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".3s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/doordash.svg" /></figure>
-                        </a>
-                    </li>
+            <ul className="list-partners">
+                <li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+      <img alt="jobhub" src="assets/imgs/jobs/logos/samsung.svg" />
+    </figure>
+  </a>
+</li>
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+    <img alt="jobhub" src="assets/imgs/jobs/logos/google.svg" />
+    </figure>
+  </a>
+</li>
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+    <img alt="jobhub" src="assets/imgs/jobs/logos/facebook.svg" />
+    </figure>
+  </a>
+</li>
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+    <img alt="jobhub" src="assets/imgs/jobs/logos/pinterest.svg" />
+    </figure>
+  </a>
+</li>       
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+    <img alt="jobhub" src="assets/imgs/jobs/logos/avaya.svg" />
+    </figure>
+  </a>
+</li>       
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+    <img alt="jobhub" src="assets/imgs/jobs/logos/forbes.svg" />
+    </figure>
+  </a>
+</li>   
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+   <img alt="jobhub" src="assets/imgs/jobs/logos/avis.svg" />
+    </figure>
+  </a>
+</li>  
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+   <img alt="jobhub" src="assets/imgs/jobs/logos/nielsen.svg" />
+    </figure>
+  </a>
+</li>  
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+   <img alt="jobhub" src="assets/imgs/jobs/logos/doordash.svg" />
+    </figure>
+  </a>
+</li>              
+                 
                 </ul>
             </div>
         </div>

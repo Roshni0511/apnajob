@@ -1,7 +1,43 @@
 import React, { useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation,Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
+const testimonials = [
+    {
+      name: "Chris Brown",
+      role: "Visual Designer",
+      image: "/assets/imgs/page/about/profile2.png",
+      rating: 4,
+    },
+    {
+      name: "Justin Bieber",
+      role: "Visual Designer",
+      image: "/assets/imgs/page/about/profile3.png",
+      rating: 5,
+    },
+    {
+      name: "Katy Perry",
+      role: "Visual Designer",
+      image: "/assets/imgs/page/about/profile.png",
+      rating: 5,
+    },
+    {
+      name: "Michael Jordan",
+      role: "Graphic Designer",
+      image: "/assets/imgs/page/about/profile2.png",
+      rating: 4,
+    },
+    {
+      name: "Emma Watson",
+      role: "UI/UX Designer",
+      image: "/assets/imgs/page/about/profile3.png",
+      rating: 5,
+    },
+  ];
 const OurServices = () => {
        const [isYearly, setIsYearly] = useState(false);
     
@@ -214,155 +250,93 @@ const OurServices = () => {
                 </div>
             </div>
         </section>
-        <section className="section-box mt-70 mt-md-0">
-            <div className="container">
-                <h2 className="section-title mb-15 wow animate__animated animate__fadeInUp">Our Happy Customer</h2>
-                <div className="row">
-                    <div className="col-lg-7">
-                        <div className="text-md-lh24 color-black-5 wow animate__animated animate__fadeInUp">
-                            When it comes to choosing the right web hosting provider, we know how easy it is to get overwhelmed
-                            with the number.
-                        </div>
+        <section className="section-box mt-5 mt-md-0">
+  <div className="container">
+    <h2 className="section-title mb-3 wow animate__animated animate__fadeInUp">
+      Our Happy Customers
+    </h2>
+    <div className="row">
+      <div className="col-lg-7">
+        <div className="text-md-lh24 color-black-5 wow animate__animated animate__fadeInUp">
+          When it comes to choosing the right web hosting provider, we know how easy it is to get overwhelmed by the number of options available.
+        </div>
+      </div>
+    </div>
+
+    <section className="section-box mt-50 mt-md-0">
+  <div className="container">
+    <h2 className="section-title text-center mb-15 wow animate__animated animate__fadeInUp">Our Happy Customer</h2>
+    <div className="text-normal text-center color-black-5 box-mw-60 wow animate__animated animate__fadeInUp mt-20">
+      When it comes to choosing the right web hosting provider, we know how easy it is to get overwhelmed with the number.
+    </div>
+
+    <div className="row mt-70">
+      <div className="box-swiper">
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={20}
+          loop={true}
+          pagination={{ clickable: true }}
+          navigation
+          autoplay={{ delay: 3000 }}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          className="swiper-container"
+        >
+          {testimonials.map((testimonial, index) => (
+            <SwiperSlide key={index}>
+              <div className="testimonial-slide">
+                <div className="card-grid hover-up top-card">
+                  <div className="text-center card-image">
+                    <img
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      style={{ width: '100px', height: '100px', borderRadius: '50%' }}
+                    />
+                  </div>
+                  <div className="card-info">
+                    <p className="text-center">
+                      We are on the hunt for a designer who is exceptional in both
+                      making incredible product interfaces as well as
+                    </p>
+                    <div className="text-center rating">
+                      {"⭐".repeat(testimonial.rating)}
                     </div>
-                </div>
-                <div className="row mt-50">
-                    <div className="box-swiper">
-                        <div className="swiper-container swiper-group-2">
-                            <div className="swiper-wrapper pb-70 pt-5">
-                                <div className="swiper-slide">
-                                    <div className="card-two-collumn hover-up">
-                                        <div className="text-center card-grid-3-image">
-                                            <a href="#">
-                                                <figure><img alt="jobhub" src="assets/imgs/page/services/profile.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div className="card-block-info quote-left mt-10">
-                                            <h5 className="heading-md font-semibold mb-20">Design Quality and Customer Support</h5>
-                                            <p className="text-md">Our creative strategy is focused on inspiring customers to live
-                                                more sustainable and healthy lives. The Senior Designer works to elevate the
-                                                brand and creates</p>
-                                            <div className="card-bottom-bd">
-                                                <div className="row">
-                                                    <div className="col-lg-6">
-                                                        <div className="card-profile">
-                                                            <strong>Azumi Shine</strong>
-                                                            <span>Google UI UX Design</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-lg-6">
-                                                        <div className="mt-15 text-end">
-                                                            <div className="rate">
-                                                                <input type="radio" id="star5" name="rate" value="5" />
-                                                                <label for="star5" title="text">5 stars</label>
-                                                                <input type="radio" id="star4" name="rate" value="4" />
-                                                                <label for="star4" title="text" className="checked">4 stars</label>
-                                                                <input type="radio" id="star3" name="rate" value="3" />
-                                                                <label for="star3" title="text" className="checked">3 stars</label>
-                                                                <input type="radio" id="star2" name="rate" value="2" />
-                                                                <label for="star2" title="text" className="checked">2 stars</label>
-                                                                <input type="radio" id="star1" name="rate" value="1" />
-                                                                <label for="star1" title="text" className="checked">1 star</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="card-two-collumn hover-up">
-                                        <div className="text-center card-grid-3-image">
-                                            <a href="#">
-                                                <figure><img alt="jobhub" src="assets/imgs/page/services/profile3.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div className="card-block-info quote-left mt-10">
-                                            <h5 className="heading-md font-semibold mb-20">Price and Product's Value</h5>
-                                            <p className="text-md">Our creative strategy is focused on inspiring customers to live
-                                                more sustainable and healthy lives. The Senior Designer works to elevate the
-                                                brand and creates</p>
-                                            <div className="card-bottom-bd">
-                                                <div className="row">
-                                                    <div className="col-lg-6">
-                                                        <div className="card-profile">
-                                                            <strong>Steven Jhan</strong>
-                                                            <span>Aplle inc / Graphic Design</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-lg-6">
-                                                        <div className="rate">
-                                                            <input type="radio" id="star52" name="rate" value="5" />
-                                                            <label for="star52" title="text" className="checked">5 stars</label>
-                                                            <input type="radio" id="star42" name="rate" value="4" />
-                                                            <label for="star42" title="text" className="checked">4 stars</label>
-                                                            <input type="radio" id="star32" name="rate" value="3" />
-                                                            <label for="star32" title="text" className="checked">3 stars</label>
-                                                            <input type="radio" id="star22" name="rate" value="2" />
-                                                            <label for="star22" title="text" className="checked">2 stars</label>
-                                                            <input type="radio" id="star12" name="rate" value="1" />
-                                                            <label for="star12" title="text" className="checked">1 star</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="card-two-collumn">
-                                        <div className="text-center card-grid-3-image">
-                                            <a href="#">
-                                                <figure><img alt="jobhub" src="assets/imgs/page/services/profile2.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div className="card-block-info quote-left mt-10">
-                                            <h5 className="heading-md font-semibold mb-20">The best place to hire</h5>
-                                            <p className="text-md">Our mission is to create the world's most sustainable
-                                                healthcare company by creating high-quality healthcare products in iconic,
-                                                sustainable packaging.</p>
-                                            <div className="card-bottom-bd">
-                                                <div className="row">
-                                                    <div className="col-lg-6">
-                                                        <div className="card-profile">
-                                                            <strong>Azumi Shine</strong>
-                                                            <span>Google UI UX Design</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-lg-6">
-                                                        <div className="mt-15 text-end">
-                                                            <div className="rate">
-                                                                <input type="radio" id="star53" name="rate" value="5" />
-                                                                <label for="star53" title="text" className="checked">5 stars</label>
-                                                                <input type="radio" id="star43" name="rate" value="4" />
-                                                                <label for="star43" title="text" className="checked">4 stars</label>
-                                                                <input type="radio" id="star33" name="rate" value="3" />
-                                                                <label for="star33" title="text" className="checked">3 stars</label>
-                                                                <input type="radio" id="star23" name="rate" value="2" />
-                                                                <label for="star23" title="text" className="checked">2 stars</label>
-                                                                <input type="radio" id="star13" name="rate" value="1" />
-                                                                <label for="star13" title="text" className="checked">1 star</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="swiper-pagination swiper-pagination3"></div>
-                        </div>
+                    <div className="text-center profile" >
+                      <strong>{testimonial.name}</strong>
+                      <span>{testimonial.role}</span>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </section>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+</section>
+     
         <section className="section-box mt-90 mb-50">
             <div className="container">
                 <div className="mw-450 text-center">
-                    <h3 className="mb-30 wow animate__animated animate__fadeInUp">Choose The Offer That Suits You</h3>
+                    <h3 className="mb-30 wow animate__animated animate__fadeInUp ">Choose The Offer That Suits You</h3>
                 </div>
-                <div className="mw-650 text-center wow animate__animated animate__fadeInUp">
+                <div className="mw-650 text-center wow animate__animated animate__fadeInUp"
+                
+                >
                     <p className="mb-35 text-md-lh24 color-black-5">When it comes to choosing the right web hosting provider, we
                         know how easy it is to get overwhelmed with the number.</p>
                 </div>

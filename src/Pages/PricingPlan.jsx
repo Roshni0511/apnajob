@@ -9,6 +9,7 @@ const PricingPlan = () => {
         setIsYearly((prev) => !prev);
     };
   return (
+    
     <>
        <Navbar />
        <main className="main">

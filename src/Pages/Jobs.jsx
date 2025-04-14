@@ -1,10 +1,51 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
+import $ from "jquery";
+import "jquery-ui-dist/jquery-ui.css";
+import "jquery-ui-dist/jquery-ui";
 
 const Jobs = () => {
+    const sliderRef = useRef(null);
+    const [minSalary, setMinSalary] = useState(1500);
+    const [maxSalary, setMaxSalary] = useState(92967);
+  
+    useEffect(() => {
+      if (sliderRef.current) {
+        $(sliderRef.current).slider({
+          range: true,
+          min: 0,
+          max: 100000,
+          values: [minSalary, maxSalary],
+          slide: (event, ui) => {
+            setMinSalary(ui.values[0]);
+            setMaxSalary(ui.values[1]);
+          }
+        });
+  
+        // Apply style ONLY to this specific slider using parent class
+        const $slider = $(sliderRef.current);
+        $slider.find(".ui-slider-range").css("background", "#a259ff");
+        $slider.find(".ui-slider-handle").css({
+          background: "white",
+          border: "2px solid #a259ff",
+          width: "1.2em",
+          height: "1.2em",
+          top: "-0.4em",
+          borderRadius: "50%",
+          cursor: "pointer"
+        });
+      }
+    }, []);
+  
+    useEffect(() => {
+      if (sliderRef.current) {
+        $(sliderRef.current).slider("values", 0, minSalary);
+        $(sliderRef.current).slider("values", 1, maxSalary);
+      }
+    }, [minSalary, maxSalary]);
+  
   return (
     <>
        <Navbar />
@@ -20,7 +61,7 @@ const Jobs = () => {
                         </div>
                         <div className="col-lg-5 col-md-3 text-lg-end text-start">
                             <ul className="breadcrumbs mt-sm-15">
-                                <li><a href="#">Home</a></li>
+                                <li><a href="">Home</a></li>
                                 <li>Jobs listing</li>
                             </ul>
                         </div>
@@ -34,7 +75,7 @@ const Jobs = () => {
                                     </form>
                                 </div>
                                 <div className="list-tags-job">
-                                    <a href="#" className="text-normal job-tag">UI/UX designing <span className="remove-tags-job"></span></a>
+                                    <a href="" className="text-normal job-tag">UI/UX designing <span className="remove-tags-job"></span></a>
                                 </div>
                             </div>
                             <div className="col-lg-7">
@@ -44,30 +85,30 @@ const Jobs = () => {
                                             <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" data-bs-display="static"><i className="fi-rr-briefcase"></i>
                                                 <span>Full time</span> <i className="fi-rr-angle-small-down"></i></button>
                                             <ul className="dropdown-menu">
-                                                <li><a className="dropdown-item active" href="#">Full time</a></li>
-                                                <li><a className="dropdown-item" href="#">Part time</a></li>
-                                                <li><a className="dropdown-item" href="#">Freelancer</a></li>
-                                                <li><a className="dropdown-item" href="#">Online work</a></li>
+                                                <li><a className="dropdown-item active" href="">Full time</a></li>
+                                                <li><a className="dropdown-item" href="">Part time</a></li>
+                                                <li><a className="dropdown-item" href="">Freelancer</a></li>
+                                                <li><a className="dropdown-item" href="">Online work</a></li>
                                             </ul>
                                         </div>
                                         <div className="dropdown">
                                             <button className="btn dropdown-toggle" type="button" id="dropdownLocation" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static"><i className="fi-rr-marker"></i> <span>New
                                                     York, USA</span> <i className="fi-rr-angle-small-down"></i></button>
                                             <ul className="dropdown-menu" aria-labelledby="dropdownLocation">
-                                                <li><a className="dropdown-item active" href="#">New York, USA</a></li>
-                                                <li><a className="dropdown-item" href="#">Dallas, USA</a></li>
-                                                <li><a className="dropdown-item" href="#">Chicago, USA</a></li>
+                                                <li><a className="dropdown-item active" href="">New York, USA</a></li>
+                                                <li><a className="dropdown-item" href="">Dallas, USA</a></li>
+                                                <li><a className="dropdown-item" href="">Chicago, USA</a></li>
                                             </ul>
                                         </div>
                                         <div className="dropdown">
                                             <button className="btn dropdown-toggle" type="button" id="dropdownLocation2" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static"><i class="fa-solid fa-indian-rupee-sign"></i><span>Salary
                                                     Range</span> <i className="fi-rr-angle-small-down"></i></button>
                                             <ul className="dropdown-menu" aria-labelledby="dropdownLocation2">
-                                                <li><a className="dropdown-item active" href="#">₹100 -  ₹500</a></li>
-                                                <li><a className="dropdown-item" href="#">₹500 - ₹1000</a></li>
-                                                <li><a className="dropdown-item" href="#">₹1000 - ₹1500</a></li>
-                                                <li><a className="dropdown-item" href="#">₹1500 - ₹2000</a></li>
-                                                <li><a className="dropdown-item" href="#">Over ₹2000</a></li>
+                                                <li><a className="dropdown-item active" href="">₹100 -  ₹500</a></li>
+                                                <li><a className="dropdown-item" href="">₹500 - ₹1000</a></li>
+                                                <li><a className="dropdown-item" href="">₹1000 - ₹1500</a></li>
+                                                <li><a className="dropdown-item" href="">₹1500 - ₹2000</a></li>
+                                                <li><a className="dropdown-item" href="">Over ₹2000</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -98,14 +139,14 @@ const Jobs = () => {
                                             <div className="dropdown dropdown-sort">
                                                 <button className="btn dropdown-toggle" type="button" id="dropdownSort" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static"><span>Newest Post</span> <i className="fi-rr-angle-small-down"></i></button>
                                                 <ul className="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownSort">
-                                                    <li><a className="dropdown-item active" href="#">Newest Post</a></li>
-                                                    <li><a className="dropdown-item" href="#">Oldest Post</a></li>
-                                                    <li><a className="dropdown-item" href="#">Rating Post</a></li>
+                                                    <li><a className="dropdown-item active" href="">Newest Post</a></li>
+                                                    <li><a className="dropdown-item" href="">Oldest Post</a></li>
+                                                    <li><a className="dropdown-item" href="">Rating Post</a></li>
                                                 </ul>
                                             </div>
                                             <div className="box-view-type">
-                                                <a href="job-grid.html" className="view-type"><img src="assets/imgs/theme/icons/icon-list.svg" alt="jobhub" /></a>
-                                                <a href="job-list.html" className="view-type"><img src="assets/imgs/theme/icons/icon-grid.svg" alt="jobhub" /></a>
+                                                <a href="" className="view-type"><img src="assets/imgs/theme/icons/icon-list.svg" alt="jobhub" /></a>
+                                                <a href="" className="view-type"><img src="assets/imgs/theme/icons/icon-grid.svg" alt="jobhub" /></a>
                                             </div>
                                         </div>
                                     </div>
@@ -123,8 +164,8 @@ const Jobs = () => {
                                                     <div className="dropdowm menu-dropdown-abs">
                                                         <button className="btn btn-dots btn-dots-abs-right dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
                                                         <ul className="dropdown-menu dropdown-menu-light">
-                                                            <li><a className="dropdown-item" href="#">View</a></li>
-                                                            <li><a className="dropdown-item" href="#">Bookmark</a></li>
+                                                            <li><a className="dropdown-item" href="">View</a></li>
+                                                            <li><a className="dropdown-item" href="">Bookmark</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -143,7 +184,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">Amanda</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">Amanda</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -151,8 +192,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -174,8 +215,8 @@ const Jobs = () => {
                                                     <div className="dropdowm menu-dropdown-abs">
                                                         <button className="btn btn-dots btn-dots-abs-right dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
                                                         <ul className="dropdown-menu dropdown-menu-light">
-                                                            <li><a className="dropdown-item" href="#">View</a></li>
-                                                            <li><a className="dropdown-item" href="#">Bookmark</a></li>
+                                                            <li><a className="dropdown-item" href="">View</a></li>
+                                                            <li><a className="dropdown-item" href="">Bookmark</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -194,7 +235,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -202,8 +243,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -225,8 +266,8 @@ const Jobs = () => {
                                                     <div className="dropdowm menu-dropdown-abs">
                                                         <button className="btn btn-dots btn-dots-abs-right dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
                                                         <ul className="dropdown-menu dropdown-menu-light">
-                                                            <li><a className="dropdown-item" href="#">View</a></li>
-                                                            <li><a className="dropdown-item" href="#">Bookmark</a></li>
+                                                            <li><a className="dropdown-item" href="">View</a></li>
+                                                            <li><a className="dropdown-item" href="">Bookmark</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -245,7 +286,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -253,8 +294,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -276,8 +317,8 @@ const Jobs = () => {
                                                     <div className="dropdowm menu-dropdown-abs">
                                                         <button className="btn btn-dots btn-dots-abs-right dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
                                                         <ul className="dropdown-menu dropdown-menu-light">
-                                                            <li><a className="dropdown-item" href="#">View</a></li>
-                                                            <li><a className="dropdown-item" href="#">Bookmark</a></li>
+                                                            <li><a className="dropdown-item" href="">View</a></li>
+                                                            <li><a className="dropdown-item" href="">Bookmark</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -296,7 +337,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -304,7 +345,7 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
                                                         <a href="job-list.html" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
@@ -347,7 +388,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -355,8 +396,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -398,7 +439,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -406,8 +447,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -449,7 +490,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -457,8 +498,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -500,7 +541,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -508,8 +549,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -551,7 +592,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -559,8 +600,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -602,7 +643,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -610,8 +651,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -653,7 +694,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -661,8 +702,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -704,7 +745,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -712,8 +753,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -755,7 +796,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -763,8 +804,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -806,7 +847,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -814,8 +855,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -857,7 +898,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -865,8 +906,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -908,7 +949,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -916,8 +957,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -959,7 +1000,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -967,8 +1008,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -1010,7 +1051,7 @@ const Jobs = () => {
                                             <div className="card-2-bottom mt-30">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-8">
-                                                        <a href="employers-single-2.html"><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
+                                                        <a href=""><span className="text-brand-10 text-icon-first">AliStudio, Inc</span></a>
                                                     </div>
                                                     <div className="col-lg-6 col-4 text-end">
                                                         <span className="card-text-price"> ₹500<span>/Hour</span> </span>
@@ -1018,8 +1059,8 @@ const Jobs = () => {
                                                 </div>
                                                 <div className="row mt-20">
                                                     <div className="col-lg-8 col-8">
-                                                        <a href="job-grid.html" className="btn btn-grey-small">Adobe XD</a>
-                                                        <a href="job-list.html" className="btn btn-grey-small">Figma</a>
+                                                        <a href="" className="btn btn-grey-small">Adobe XD</a>
+                                                        <a href="" className="btn btn-grey-small">Figma</a>
                                                     </div>
                                                     <div className="col-lg-4 col-4 text-end pt-5">
                                                         <span className="text-gray-100 text-md"><i className="fi-rr-shield-check"></i></span>
@@ -1177,33 +1218,69 @@ const Jobs = () => {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="filter-block mb-40">
-                                    <h5 className="medium-heading mb-25">Salary Range</h5>
-                                    <div className="">
-                                        <div className="row mb-20">
-                                            <div className="col-sm-12">
-                                                <div id="slider-range"></div>
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-lg-6">
-                                                <label className="lb-slider">From</label>
-                                                <div className="form-group minus-input">
-                                                    <input type="text" name="min-value-money" className="input-disabled form-control min-value-money" disabled="disabled" value="" />
-                                                    <input type="hidden" name="min-value" className="form-control min-value" value="" />
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6">
-                                                <label className="lb-slider">To</label>
-                                                <div className="form-group">
-                                                    <input type="text" name="max-value-money" className="input-disabled form-control max-value-money" disabled="disabled" value="" />
-                                                    <input type="hidden" name="max-value" className="form-control max-value" value="" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="buttons-filter">
+                                <div
+      className="salary-slider-wrapper"
+      style={{ maxWidth: "300px", fontFamily: "sans-serif" }}
+    >
+      <h5 style={{ fontSize: "18px", fontWeight: 600, marginBottom: "15px" }}>
+        Salary Range
+      </h5>
+
+      <div
+        ref={sliderRef}
+        className="custom-salary-slider"
+        style={{ marginBottom: "20px" }}
+      ></div>
+
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between"
+        }}
+      >
+        <div style={{ display: "flex", flexDirection: "column", width: "45%" }}>
+          <label style={{ marginBottom: "5px", fontSize: "14px" }}>From</label>
+          <input
+            type="text"
+            disabled
+            value={`$${minSalary.toLocaleString()}`}
+            style={{
+              border: "1px solid #ddd",
+              backgroundColor: "#f9f9f9",
+              borderRadius: "10px",
+              padding: "10px",
+              fontWeight: "bold",
+              textAlign: "center",
+              fontSize: "14px",
+              color: "#555"
+            }}
+          />
+        </div>
+
+        <span style={{ fontSize: "20px", color: "#999" }}>-</span>
+
+        <div style={{ display: "flex", flexDirection: "column", width: "45%" }}>
+          <label style={{ marginBottom: "5px", fontSize: "14px" }}>To</label>
+          <input
+            type="text"
+            disabled
+            value={`$${maxSalary.toLocaleString()}`}
+            style={{
+              border: "1px solid #ddd",
+              backgroundColor: "#f9f9f9",
+              borderRadius: "10px",
+              padding: "10px",
+              fontWeight: "bold",
+              textAlign: "center",
+              fontSize: "14px",
+              color: "#555"
+            }}
+          />
+        </div>
+      </div>
+    </div>
+                                <div className="buttons-filter" style={{marginTop:'30px'}}>
                                     <button className="btn btn-default">Apply filter</button>
                                     <button className="btn">Reset filter</button>
                                 </div>
@@ -1222,52 +1299,206 @@ const Jobs = () => {
         </section>
         <div className="section-box">
             <div className="container">
-                <ul className="list-partners">
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay="0s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/samsung.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/google.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".2s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/facebook.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".3s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/pinterest.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".4s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/avaya.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".5s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/forbes.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/avis.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".2s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/nielsen.svg" /></figure>
-                        </a>
-                    </li>
-                    <li className="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".3s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/doordash.svg" /></figure>
-                        </a>
-                    </li>
+            <ul className="list-partners">
+                <li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+      <img alt="jobhub" src="assets/imgs/jobs/logos/samsung.svg" />
+    </figure>
+  </a>
+</li>
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+    <img alt="jobhub" src="assets/imgs/jobs/logos/google.svg" />
+    </figure>
+  </a>
+</li>
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+    <img alt="jobhub" src="assets/imgs/jobs/logos/facebook.svg" />
+    </figure>
+  </a>
+</li>
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+    <img alt="jobhub" src="assets/imgs/jobs/logos/pinterest.svg" />
+    </figure>
+  </a>
+</li>       
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+    <img alt="jobhub" src="assets/imgs/jobs/logos/avaya.svg" />
+    </figure>
+  </a>
+</li>       
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+    <img alt="jobhub" src="assets/imgs/jobs/logos/forbes.svg" />
+    </figure>
+  </a>
+</li>   
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+   <img alt="jobhub" src="assets/imgs/jobs/logos/avis.svg" />
+    </figure>
+  </a>
+</li>  
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+   <img alt="jobhub" src="assets/imgs/jobs/logos/nielsen.svg" />
+    </figure>
+  </a>
+</li>  
+<li
+  className="wow animate__animated animate__fadeInUp hover-up"
+  data-wow-delay="0s"
+>
+  <a href="">
+    <figure
+      style={{
+        transition: "transform 0.4s ease, opacity 0.4s ease"
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+        e.currentTarget.style.opacity = "0.95";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.opacity = "1";
+      }}
+    >
+   <img alt="jobhub" src="assets/imgs/jobs/logos/doordash.svg" />
+    </figure>
+  </a>
+</li>              
+                 
                 </ul>
             </div>
         </div>

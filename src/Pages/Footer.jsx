@@ -10,7 +10,7 @@ const Footer = () => {
                     <a href="/"><img alt="jobhub" src="assets/imgs/theme/jobhub-logo.svg" /></a>
                     <div className="mt-20 mb-20">Jobhub is the heart of the design community and the best resource to discover and connect with designers and jobs worldwide.</div>
                 </div>
-                <div className="col-md-2 col-xs-6">
+                {/* <div className="col-md-2 col-xs-6">
                     <h6>Company</h6>
                     <ul className="menu-footer mt-40">
                         <li><a href="#">About us</a></li>
@@ -18,14 +18,17 @@ const Footer = () => {
                         <li><a href="#">Products</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </div>
+                </div> */}
                 <div className="col-md-2 col-xs-6">
                     <h6>Product</h6>
                     <ul className="menu-footer mt-40">
-                        <li><a href="#">Feature</a></li>
-                        <li><a href="/PricingPlan">Pricing</a></li>
-                        <li><a href="#">Credit</a></li>
-                        <li><a href="/FAQS">FAQ</a></li>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/Jobs">JOBS</a></li>
+                        <li><a href="/Employer">EMPLOYER</a></li>
+                        <li><a href="/Candidate">CANDIDATE</a></li>
+                        <li><a href="/Blog">BLOG</a></li>
+                        <li><a href="/AboutUs">ABOUT US </a></li>
+                        <li><a href="/ContactUs">CONTACT US</a></li>
                     </ul>
                 </div>
                 <div className="col-md-2 col-xs-6">
@@ -40,9 +43,10 @@ const Footer = () => {
                 <div className="col-md-2 col-xs-6">
                     <h6>Support</h6>
                     <ul className="menu-footer mt-40">
-                        <li><a href="/Privacypolicy">Privacy & Policy</a></li>
-                        <li><a href="#">Help</a></li>
+                        <li><a href="/Privacypolicy">Privacy & Policy</a></li>                 
                         <li><a href="/TermsandCondition">Terms & Condition</a></li>
+                        <li><a href="/OurServices">OUR SERVICES</a></li>
+                        <li><a href="/PricingPlan">PRICING PLAN</a></li>
                         <li><a href="/FAQS">FAQ</a></li>
                     </ul>
                 </div>
